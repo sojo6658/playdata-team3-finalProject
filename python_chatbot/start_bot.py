@@ -7,15 +7,15 @@ from discord.ext import commands
 from discord.ui import Button, View
 from discord import ButtonStyle, Interaction
 
-#CONST_GUILD = "1055420078289588254"
-CONST_TOKEN = "MTA1NTQyMTc2NDkxNTY5MTU0MQ.GRx2u4.wBojzfJNutZKwV2ZPaBhh3BmrTxuTQwmmoenwA"
+#CONST_GUILD = "your GUILD id"
+CONST_TOKEN = "your bot TOKEN"
 
 bot = commands.Bot(command_prefix="/", intents=discord.Intents.default())
 
 @bot.event
 async def on_ready():
     print("Bot Is Ready And Online!")
-    MY_channel = bot.get_channel(1065084727293382686)
+    MY_channel = bot.get_channel("your channel id")
     await MY_channel.send("""온라인 강의를 추천해주는 봇입니다.! \n DM으로 원하는시는 강의를 추천해달라고 해보세요!""")
     
     
