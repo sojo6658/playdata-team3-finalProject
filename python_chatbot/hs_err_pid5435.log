@@ -1,0 +1,1059 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x0000000000abffe0, pid=5435, tid=0x00007fafa90b1740
+#
+# JRE version: OpenJDK Runtime Environment (8.0_272-b10) (build 1.8.0_272-8u272-b10-0ubuntu1~18.04-b10)
+# Java VM: OpenJDK 64-Bit Server VM (25.272-b10 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [python3+0x6bffe0]  _Py_NoneStruct+0x0
+#
+# Core dump written. Default location: /workspace/python_chatbot/core or core.5435
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000019f7800):  JavaThread "main" [_thread_in_native, id=5435, stack(0x00007ffef6da4000,0x00007ffef6ea4000)]
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 2 (SEGV_ACCERR), si_addr: 0x0000000000abffe0
+
+Registers:
+RAX=0x00007fafa7b336c0, RBX=0x00007faf97eb1ed0, RCX=0x000000000000000f, RDX=0x000000000000000e
+RSP=0x00007ffef6ea0328, RBP=0x0000000000000000, RSI=0x0000000000000000, RDI=0x00007faf97eb1ed0
+R8 =0x0000000000000073, R9 =0x00007ffef6e9ff30, R10=0x0000000000000073, R11=0x0000000000000000
+R12=0x0000000000abf940, R13=0x0000000000000000, R14=0x00000000019c23d0, R15=0x00000000005a0df0
+RIP=0x0000000000abffe0, EFLAGS=0x0000000000010287, CSGSFS=0x0000000000000033, ERR=0x0000000000000015
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007ffef6ea0328)
+0x00007ffef6ea0328:   00000000005c0c3c 00007fafa7c7c3c0
+0x00007ffef6ea0338:   00007fafa90b1740 00007faf97eb1ee0
+0x00007ffef6ea0348:   00000000005c0c3c 000000000185c2a0
+0x00007ffef6ea0358:   00007fafa90b1740 0000000000abf940
+0x00007ffef6ea0368:   000000000057aac5 0000000001172e30
+0x00007ffef6ea0378:   0000000000000009 5a26b0a5936a3aac
+0x00007ffef6ea0388:   0000000000000000 0000000000000000
+0x00007ffef6ea0398:   00007faf97eb1ee0 00007fafa7c7c3c0
+0x00007ffef6ea03a8:   00007faf97f2cb50 0000000000000000
+0x00007ffef6ea03b8:   0000000000abf940 0000000000000000
+0x00007ffef6ea03c8:   00000000019c23d0 00000000005a0df0
+0x00007ffef6ea03d8:   00000000005ee040 00000000019c23b0
+0x00007ffef6ea03e8:   000000000113958c 00000000019c23d8
+0x00007ffef6ea03f8:   00000000019c21c0 0000000000f861d0
+0x00007ffef6ea0408:   0000000000000000 00000000019c23c8
+0x00007ffef6ea0418:   0000000000569ed3 00007faf97e8a000
+0x00007ffef6ea0428:   00000000011393a0 00000000019c2328
+0x00007ffef6ea0438:   00007fafa615d040 00007fafa61c6040
+0x00007ffef6ea0448:   00007fafa615b920 00000000011729b0
+0x00007ffef6ea0458:   ffffffff0000003a 00000000019c23a8
+0x00007ffef6ea0468:   00000000019c23b0 00000000019c23c0
+0x00007ffef6ea0478:   0000000000000001 00007fafa7abd940
+0x00007ffef6ea0488:   00007fafffffffff 00007fafa61aacc0
+0x00007ffef6ea0498:   0000000000578798 00000000011729b0
+0x00007ffef6ea04a8:   00007faf97eb1ee0 00007fafa61c2730
+0x00007ffef6ea04b8:   00007fafa7abd940 00007fafa617fab0
+0x00007ffef6ea04c8:   0000000000abf940 00007faf84e8bbc0
+0x00007ffef6ea04d8:   5c4c535640bae767 0000000000000000
+0x00007ffef6ea04e8:   00000000005c4cd8 00000000011a3950
+0x00007ffef6ea04f8:   00000000005becf5 0000000000000000
+0x00007ffef6ea0508:   00000000019c21c0 00007fafa8f14040
+0x00007ffef6ea0518:   0000000000f861d0 0000000000f861d0 
+
+Instructions: (pc=0x0000000000abffe0)
+0x0000000000abffc0:   02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0x0000000000abffd0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0x0000000000abffe0:   be 5b 00 00 00 00 00 00 00 a8 ab 00 00 00 00 00
+0x0000000000abfff0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+Register to memory mapping:
+
+RAX=0x00007fafa7b336c0 is an unknown value
+RBX=0x00007faf97eb1ed0 is an unknown value
+RCX=0x000000000000000f is an unknown value
+RDX=0x000000000000000e is an unknown value
+RSP=0x00007ffef6ea0328 is pointing into the stack for thread: 0x00000000019f7800
+RBP=0x0000000000000000 is an unknown value
+RSI=0x0000000000000000 is an unknown value
+RDI=0x00007faf97eb1ed0 is an unknown value
+R8 =0x0000000000000073 is an unknown value
+R9 =0x00007ffef6e9ff30 is pointing into the stack for thread: 0x00000000019f7800
+R10=0x0000000000000073 is an unknown value
+R11=0x0000000000000000 is an unknown value
+R12=0x0000000000abf940: PyUnicode_Type+0 in python3 at 0x0000000000400000
+R13=0x0000000000000000 is an unknown value
+R14=0x00000000019c23d0 is an unknown value
+R15=0x00000000005a0df0: <offset 0x1a0df0> in python3 at 0x0000000000400000
+
+
+Stack: [0x00007ffef6da4000,0x00007ffef6ea4000],  sp=0x00007ffef6ea0328,  free space=1008k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [python3+0x6bffe0]  _Py_NoneStruct+0x0
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007faf70001000 JavaThread "SIGINT handler" daemon [_thread_blocked, id=5454, stack(0x00007faf84d78000,0x00007faf84e79000)]
+  0x0000000001bc3000 JavaThread "Service Thread" daemon [_thread_blocked, id=5451, stack(0x00007faf85558000,0x00007faf85659000)]
+  0x0000000001bc2000 JavaThread "C1 CompilerThread1" daemon [_thread_blocked, id=5450, stack(0x00007faf8565a000,0x00007faf8575a000)]
+  0x0000000001bbf000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=5449, stack(0x00007faf8575b000,0x00007faf8585b000)]
+  0x0000000001b98000 JavaThread "Finalizer" daemon [_thread_blocked, id=5447, stack(0x00007faf8595c000,0x00007faf85a5d000)]
+  0x0000000001b95800 JavaThread "Reference Handler" daemon [_thread_blocked, id=5446, stack(0x00007faf85a5d000,0x00007faf85b5e000)]
+=>0x00000000019f7800 JavaThread "main" [_thread_in_native, id=5435, stack(0x00007ffef6da4000,0x00007ffef6ea4000)]
+
+Other Threads:
+  0x0000000001b8f000 VMThread [stack: 0x00007faf85b5f000,0x00007faf85c5f000] [id=5445]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00000000019c3e30] Threads_lock - owner thread: 0x0000000001b8f000
+
+heap address: 0x00000000c0000000, size: 1024 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ def new generation   total 4992K, used 531K [0x00000000c0000000, 0x00000000c0560000, 0x00000000d5550000)
+  eden space 4480K,  11% used [0x00000000c0000000, 0x00000000c0084f40, 0x00000000c0460000)
+  from space 512K,   0% used [0x00000000c0460000, 0x00000000c0460000, 0x00000000c04e0000)
+  to   space 512K,   0% used [0x00000000c04e0000, 0x00000000c04e0000, 0x00000000c0560000)
+ tenured generation   total 10944K, used 781K [0x00000000d5550000, 0x00000000d6000000, 0x0000000100000000)
+   the space 10944K,   7% used [0x00000000d5550000, 0x00000000d5613520, 0x00000000d5613600, 0x00000000d6000000)
+ Metaspace       used 3762K, capacity 4700K, committed 4864K, reserved 1056768K
+  class space    used 418K, capacity 464K, committed 512K, reserved 1048576K
+
+Card table byte_map: [0x00007faf86785000,0x00007faf86986000] byte_map_base: 0x00007faf86185000
+
+Polling page: 0x00007fafa90b9000
+
+CodeCache: size=245760Kb used=1574Kb max_used=1586Kb free=244186Kb
+ bounds [0x00007faf86d46000, 0x00007faf86fb6000, 0x00007faf95d46000]
+ total_blobs=513 nmethods=250 adapters=178
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 1.195 Thread 0x0000000001bc2000 nmethod 252 0x00007faf86eccc50 code [0x00007faf86ecce20, 0x00007faf86ecd868]
+Event: 1.195 Thread 0x0000000001bc2000  247       1       java.lang.reflect.Field::getModifiers (5 bytes)
+Event: 1.195 Thread 0x0000000001bc2000 nmethod 247 0x00007faf86ecdad0 code [0x00007faf86ecdc20, 0x00007faf86ecdd30]
+Event: 1.195 Thread 0x0000000001bc2000  250       3       java.util.TreeMap::setColor (10 bytes)
+Event: 1.195 Thread 0x0000000001bc2000 nmethod 250 0x00007faf86ecdd90 code [0x00007faf86ecdf00, 0x00007faf86ece070]
+Event: 1.196 Thread 0x0000000001bc2000  248       1       java.lang.reflect.Field::getName (5 bytes)
+Event: 1.196 Thread 0x0000000001bc2000 nmethod 248 0x00007faf86ece110 code [0x00007faf86ece260, 0x00007faf86ece370]
+Event: 1.196 Thread 0x0000000001bc2000  237  s    3       sun.misc.URLClassPath::getNextLoader (88 bytes)
+Event: 1.196 Thread 0x0000000001bc2000 nmethod 237 0x00007faf86ece3d0 code [0x00007faf86ece5c0, 0x00007faf86ecee28]
+Event: 1.292 Thread 0x0000000001bbf000 nmethod 249 0x00007faf86ed24d0 code [0x00007faf86ed26a0, 0x00007faf86ed2c98]
+
+GC Heap History (2 events):
+Event: 1.100 GC heap before
+{Heap before GC invocations=0 (full 0):
+ def new generation   total 4928K, used 3580K [0x00000000c0000000, 0x00000000c0550000, 0x00000000d5550000)
+  eden space 4416K,  81% used [0x00000000c0000000, 0x00000000c037f338, 0x00000000c0450000)
+  from space 512K,   0% used [0x00000000c0450000, 0x00000000c0450000, 0x00000000c04d0000)
+  to   space 512K,   0% used [0x00000000c04d0000, 0x00000000c04d0000, 0x00000000c0550000)
+ tenured generation   total 10944K, used 0K [0x00000000d5550000, 0x00000000d6000000, 0x0000000100000000)
+   the space 10944K,   0% used [0x00000000d5550000, 0x00000000d5550000, 0x00000000d5550200, 0x00000000d6000000)
+ Metaspace       used 3735K, capacity 4700K, committed 4864K, reserved 1056768K
+  class space    used 411K, capacity 464K, committed 512K, reserved 1048576K
+Event: 1.106 GC heap after
+Heap after GC invocations=1 (full 1):
+ def new generation   total 4992K, used 0K [0x00000000c0000000, 0x00000000c0560000, 0x00000000d5550000)
+  eden space 4480K,   0% used [0x00000000c0000000, 0x00000000c0000000, 0x00000000c0460000)
+  from space 512K,   0% used [0x00000000c0460000, 0x00000000c0460000, 0x00000000c04e0000)
+  to   space 512K,   0% used [0x00000000c04e0000, 0x00000000c04e0000, 0x00000000c0560000)
+ tenured generation   total 10944K, used 781K [0x00000000d5550000, 0x00000000d6000000, 0x0000000100000000)
+   the space 10944K,   7% used [0x00000000d5550000, 0x00000000d5613520, 0x00000000d5613600, 0x00000000d6000000)
+ Metaspace       used 3735K, capacity 4700K, committed 4864K, reserved 1056768K
+  class space    used 411K, capacity 464K, committed 512K, reserved 1048576K
+}
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (7 events):
+Event: 0.093 Thread 0x00000000019f7800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000c0007cc0) thrown at [/build/openjdk-8-d7JjN2/openjdk-8-8u272-b10/src/hotspot/src/share/vm/
+Event: 0.093 Thread 0x00000000019f7800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x00000000c0007fa8) thrown at [/build/openjdk-8-d7JjN2/openjdk-8-8u272-b10/src/hotspot/src/share/vm/prims/jni.cpp, lin
+Event: 0.204 Thread 0x00000000019f7800 Exception <a 'java/util/zip/ZipException'> (0x00000000c0080180) thrown at [/build/openjdk-8-d7JjN2/openjdk-8-8u272-b10/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 0.204 Thread 0x00000000019f7800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000c0080420) thrown at [/build/openjdk-8-d7JjN2/openjdk-8-8u272-b10/src/hotspot/src/share/vm/prims/jvm.cpp, line 1523]
+Event: 0.204 Thread 0x00000000019f7800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000c0080630) thrown at [/build/openjdk-8-d7JjN2/openjdk-8-8u272-b10/src/hotspot/src/share/vm/prims/jvm.cpp, line 1523]
+Event: 0.301 Thread 0x00000000019f7800 Exception <a 'java/lang/NoClassDefFoundError': org/jpype/classloader/DynamicClassLoader> (0x00000000c00fcd40) thrown at [/build/openjdk-8-d7JjN2/openjdk-8-8u272-b10/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 206]
+Event: 1.304 Thread 0x00000000019f7800 Exception <a 'org/jpype/PyExceptionProxy'> (0x00000000c0074570) thrown at [/build/openjdk-8-d7JjN2/openjdk-8-8u272-b10/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+
+Events (10 events):
+Event: 1.294 Executing VM operation: ThreadDump
+Event: 1.294 Executing VM operation: ThreadDump done
+Event: 1.295 loading class java/util/HashMap$KeySet
+Event: 1.295 loading class java/util/HashMap$KeySet done
+Event: 1.295 loading class java/util/HashMap$KeyIterator
+Event: 1.295 loading class java/util/HashMap$KeyIterator done
+Event: 1.304 Thread 0x00007faf58001800 Thread exited: 0x00007faf58001800
+Event: 1.304 Thread 0x0000000001d0d000 Thread exited: 0x0000000001d0d000
+Event: 1.304 Thread 0x0000000001bae800 Thread exited: 0x0000000001bae800
+Event: 1.304 Executing VM operation: Exit
+
+
+Dynamic libraries:
+00400000-008aa000 r-xp 00000000 00:ce 2165                               /usr/bin/python3.8
+00aa9000-00aaa000 r--p 004a9000 00:ce 2165                               /usr/bin/python3.8
+00aaa000-00af1000 rw-p 004aa000 00:ce 2165                               /usr/bin/python3.8
+00af1000-00b14000 rw-p 00000000 00:00 0 
+00f83000-01d77000 rw-p 00000000 00:00 0                                  [heap]
+c0000000-c0560000 rw-p 00000000 00:00 0 
+c0560000-d5550000 ---p 00000000 00:00 0 
+d5550000-d6000000 rw-p 00000000 00:00 0 
+d6000000-100000000 ---p 00000000 00:00 0 
+100000000-100080000 rw-p 00000000 00:00 0 
+100080000-140000000 ---p 00000000 00:00 0 
+7faf58000000-7faf58021000 rw-p 00000000 00:00 0 
+7faf58021000-7faf5c000000 ---p 00000000 00:00 0 
+7faf5c000000-7faf5c021000 rw-p 00000000 00:00 0 
+7faf5c021000-7faf60000000 ---p 00000000 00:00 0 
+7faf60000000-7faf60021000 rw-p 00000000 00:00 0 
+7faf60021000-7faf64000000 ---p 00000000 00:00 0 
+7faf64000000-7faf64021000 rw-p 00000000 00:00 0 
+7faf64021000-7faf68000000 ---p 00000000 00:00 0 
+7faf68000000-7faf68125000 rw-p 00000000 00:00 0 
+7faf68125000-7faf6c000000 ---p 00000000 00:00 0 
+7faf6c000000-7faf6c021000 rw-p 00000000 00:00 0 
+7faf6c021000-7faf70000000 ---p 00000000 00:00 0 
+7faf70000000-7faf70021000 rw-p 00000000 00:00 0 
+7faf70021000-7faf74000000 ---p 00000000 00:00 0 
+7faf74000000-7faf74156000 rw-p 00000000 00:00 0 
+7faf74156000-7faf78000000 ---p 00000000 00:00 0 
+7faf78000000-7faf78021000 rw-p 00000000 00:00 0 
+7faf78021000-7faf7c000000 ---p 00000000 00:00 0 
+7faf7c000000-7faf7c021000 rw-p 00000000 00:00 0 
+7faf7c021000-7faf80000000 ---p 00000000 00:00 0 
+7faf80000000-7faf80021000 rw-p 00000000 00:00 0 
+7faf80021000-7faf84000000 ---p 00000000 00:00 0 
+7faf84c77000-7faf84c7a000 ---p 00000000 00:00 0 
+7faf84c7a000-7faf84d78000 rw-p 00000000 00:00 0 
+7faf84d78000-7faf84d7b000 ---p 00000000 00:00 0 
+7faf84d7b000-7faf84eb9000 rw-p 00000000 00:00 0 
+7faf84eb9000-7faf84ebc000 ---p 00000000 00:00 0 
+7faf84ebc000-7faf84fba000 rw-p 00000000 00:00 0 
+7faf84fba000-7faf84fd2000 r-xp 00000000 00:ce 4319                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7faf84fd2000-7faf851d1000 ---p 00018000 00:ce 4319                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7faf851d1000-7faf851d2000 r--p 00017000 00:ce 4319                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7faf851d2000-7faf851d3000 rw-p 00018000 00:ce 4319                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7faf851d3000-7faf851e5000 r-xp 00000000 00:ce 4310                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7faf851e5000-7faf853e4000 ---p 00012000 00:ce 4310                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7faf853e4000-7faf853e5000 r--p 00011000 00:ce 4310                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7faf853e5000-7faf853e6000 rw-p 00012000 00:ce 4310                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7faf853e6000-7faf853e9000 r--s 00017000 00:ce 2549                       /usr/local/lib/python3.8/dist-packages/org.jpype.jar
+7faf853e9000-7faf853eb000 r--s 0000b000 00:ce 4344                       /usr/local/lib/python3.8/dist-packages/konlpy/java/twitter-text-1.14.7.jar
+7faf853eb000-7faf853f0000 r--s 001a4000 00:ce 4343                       /usr/local/lib/python3.8/dist-packages/konlpy/java/open-korean-text-2.1.0.jar
+7faf853f0000-7faf853f4000 r--s 00025000 00:ce 4342                       /usr/local/lib/python3.8/dist-packages/konlpy/java/jhannanum-0.8.4.jar
+7faf853f4000-7faf853f6000 r--s 00012000 00:ce 4341                       /usr/local/lib/python3.8/dist-packages/konlpy/java/aho-corasick.jar
+7faf853f6000-7faf853f9000 r--s 0075b000 00:ce 4339                       /usr/local/lib/python3.8/dist-packages/konlpy/java/kkma-2.0.jar
+7faf853f9000-7faf853fb000 r--s 00008000 00:ce 4337                       /usr/local/lib/python3.8/dist-packages/konlpy/java/shineware-common-1.0.jar
+7faf853fb000-7faf853fe000 r--s 0001e000 00:ce 4335                       /usr/local/lib/python3.8/dist-packages/konlpy/java/komoran-3.0.jar
+7faf853fe000-7faf85435000 r--s 004ca000 00:ce 4334                       /usr/local/lib/python3.8/dist-packages/konlpy/java/scala-library-2.12.3.jar
+7faf85435000-7faf8543c000 r--s 0003c000 00:ce 4333                       /usr/local/lib/python3.8/dist-packages/konlpy/java/snakeyaml-1.12.jar
+7faf8543c000-7faf85457000 r--s 00394000 00:ce 4232                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar
+7faf85457000-7faf85458000 ---p 00000000 00:00 0 
+7faf85458000-7faf85558000 rw-p 00000000 00:00 0 
+7faf85558000-7faf8555b000 ---p 00000000 00:00 0 
+7faf8555b000-7faf85659000 rw-p 00000000 00:00 0 
+7faf85659000-7faf8565a000 ---p 00000000 00:00 0 
+7faf8565a000-7faf8565d000 ---p 00000000 00:00 0 
+7faf8565d000-7faf8575a000 rw-p 00000000 00:00 0 
+7faf8575a000-7faf8575b000 ---p 00000000 00:00 0 
+7faf8575b000-7faf8575e000 ---p 00000000 00:00 0 
+7faf8575e000-7faf8585b000 rw-p 00000000 00:00 0 
+7faf8585b000-7faf8585e000 ---p 00000000 00:00 0 
+7faf8585e000-7faf8595c000 rw-p 00000000 00:00 0 
+7faf8595c000-7faf8595f000 ---p 00000000 00:00 0 
+7faf8595f000-7faf85a5d000 rw-p 00000000 00:00 0 
+7faf85a5d000-7faf85a60000 ---p 00000000 00:00 0 
+7faf85a60000-7faf85b5e000 rw-p 00000000 00:00 0 
+7faf85b5e000-7faf85b5f000 ---p 00000000 00:00 0 
+7faf85b5f000-7faf85c5f000 rw-p 00000000 00:00 0 
+7faf85c5f000-7faf85e2f000 r--s 03c94000 00:ce 4179                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+7faf85e2f000-7faf8626f000 rw-p 00000000 00:00 0 
+7faf8626f000-7faf8662f000 ---p 00000000 00:00 0 
+7faf8662f000-7faf86635000 rw-p 00000000 00:00 0 
+7faf86635000-7faf86785000 ---p 00000000 00:00 0 
+7faf86785000-7faf86788000 rw-p 00000000 00:00 0 
+7faf86788000-7faf8682f000 ---p 00000000 00:00 0 
+7faf8682f000-7faf86835000 rw-p 00000000 00:00 0 
+7faf86835000-7faf86985000 ---p 00000000 00:00 0 
+7faf86985000-7faf86990000 rw-p 00000000 00:00 0 
+7faf86990000-7faf86d46000 ---p 00000000 00:00 0 
+7faf86d46000-7faf86fb6000 rwxp 00000000 00:00 0 
+7faf86fb6000-7faf95d46000 ---p 00000000 00:00 0 
+7faf95d46000-7faf95d4e000 r-xp 00000000 00:ce 4323                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7faf95d4e000-7faf95f4d000 ---p 00008000 00:ce 4323                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7faf95f4d000-7faf95f4e000 r--p 00007000 00:ce 4323                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7faf95f4e000-7faf95f4f000 rw-p 00008000 00:ce 4323                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7faf95f4f000-7faf95f5a000 r-xp 00000000 00:ce 108                        /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7faf95f5a000-7faf96159000 ---p 0000b000 00:ce 108                        /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7faf96159000-7faf9615a000 r--p 0000a000 00:ce 108                        /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7faf9615a000-7faf9615b000 rw-p 0000b000 00:ce 108                        /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7faf9615b000-7faf96161000 rw-p 00000000 00:00 0 
+7faf96161000-7faf96178000 r-xp 00000000 00:ce 66                         /lib/x86_64-linux-gnu/libnsl-2.27.so
+7faf96178000-7faf96377000 ---p 00017000 00:ce 66                         /lib/x86_64-linux-gnu/libnsl-2.27.so
+7faf96377000-7faf96378000 r--p 00016000 00:ce 66                         /lib/x86_64-linux-gnu/libnsl-2.27.so
+7faf96378000-7faf96379000 rw-p 00017000 00:ce 66                         /lib/x86_64-linux-gnu/libnsl-2.27.so
+7faf96379000-7faf9637b000 rw-p 00000000 00:00 0 
+7faf9637b000-7faf96386000 r-xp 00000000 00:ce 106                        /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7faf96386000-7faf96585000 ---p 0000b000 00:ce 106                        /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7faf96585000-7faf96586000 r--p 0000a000 00:ce 106                        /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7faf96586000-7faf96587000 rw-p 0000b000 00:ce 106                        /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7faf96587000-7faf9658f000 r-xp 00000000 00:ce 104                        /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7faf9658f000-7faf9678f000 ---p 00008000 00:ce 104                        /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7faf9678f000-7faf96790000 r--p 00008000 00:ce 104                        /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7faf96790000-7faf96791000 rw-p 00009000 00:ce 104                        /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7faf96791000-7faf967bb000 r-xp 00000000 00:ce 4311                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7faf967bb000-7faf969bb000 ---p 0002a000 00:ce 4311                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7faf969bb000-7faf969bc000 r--p 0002a000 00:ce 4311                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7faf969bc000-7faf969be000 rw-p 0002b000 00:ce 4311                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7faf969be000-7faf969ce000 r-xp 00000000 00:ce 4303                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7faf969ce000-7faf96bcd000 ---p 00010000 00:ce 4303                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7faf96bcd000-7faf96bcf000 r--p 0000f000 00:ce 4303                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7faf96bcf000-7faf96bd0000 rw-p 00011000 00:ce 4303                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7faf96bd0000-7faf96bd7000 r-xp 00000000 00:ce 74                         /lib/x86_64-linux-gnu/librt-2.27.so
+7faf96bd7000-7faf96dd6000 ---p 00007000 00:ce 74                         /lib/x86_64-linux-gnu/librt-2.27.so
+7faf96dd6000-7faf96dd7000 r--p 00006000 00:ce 74                         /lib/x86_64-linux-gnu/librt-2.27.so
+7faf96dd7000-7faf96dd8000 rw-p 00007000 00:ce 74                         /lib/x86_64-linux-gnu/librt-2.27.so
+7faf96dd8000-7faf96dde000 r--s 0003d000 00:ce 4231                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar
+7faf96dde000-7faf96df9000 r--s 001d6000 00:ce 4222                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar
+7faf96df9000-7faf97b67000 r-xp 00000000 00:ce 4329                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7faf97b67000-7faf97d66000 ---p 00d6e000 00:ce 4329                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7faf97d66000-7faf97dfc000 r--p 00d6d000 00:ce 4329                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7faf97dfc000-7faf97e25000 rw-p 00e03000 00:ce 4329                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7faf97e25000-7faf97f58000 rw-p 00000000 00:00 0 
+7faf97f58000-7faf97f5d000 r--p 00000000 00:ce 3411                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/json.cpython-38-x86_64-linux-gnu.so
+7faf97f5d000-7faf97f69000 r-xp 00005000 00:ce 3411                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/json.cpython-38-x86_64-linux-gnu.so
+7faf97f69000-7faf97f6e000 r--p 00011000 00:ce 3411                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/json.cpython-38-x86_64-linux-gnu.so
+7faf97f6e000-7faf97f6f000 r--p 00015000 00:ce 3411                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/json.cpython-38-x86_64-linux-gnu.so
+7faf97f6f000-7faf97f70000 rw-p 00016000 00:ce 3411                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/json.cpython-38-x86_64-linux-gnu.so
+7faf97f70000-7faf97ff0000 rw-p 00000000 00:00 0 
+7faf97ff0000-7faf97ffb000 r--p 00000000 00:ce 3394                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/parsers.cpython-38-x86_64-linux-gnu.so
+7faf97ffb000-7faf98062000 r-xp 0000b000 00:ce 3394                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/parsers.cpython-38-x86_64-linux-gnu.so
+7faf98062000-7faf9806e000 r--p 00072000 00:ce 3394                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/parsers.cpython-38-x86_64-linux-gnu.so
+7faf9806e000-7faf9806f000 ---p 0007e000 00:ce 3394                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/parsers.cpython-38-x86_64-linux-gnu.so
+7faf9806f000-7faf98070000 r--p 0007e000 00:ce 3394                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/parsers.cpython-38-x86_64-linux-gnu.so
+7faf98070000-7faf98077000 rw-p 0007f000 00:ce 3394                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/parsers.cpython-38-x86_64-linux-gnu.so
+7faf98077000-7faf98078000 rw-p 00000000 00:00 0 
+7faf98078000-7faf9807c000 r--p 00000000 00:ce 3385                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/testing.cpython-38-x86_64-linux-gnu.so
+7faf9807c000-7faf9808d000 r-xp 00004000 00:ce 3385                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/testing.cpython-38-x86_64-linux-gnu.so
+7faf9808d000-7faf9808f000 r--p 00015000 00:ce 3385                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/testing.cpython-38-x86_64-linux-gnu.so
+7faf9808f000-7faf98090000 r--p 00016000 00:ce 3385                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/testing.cpython-38-x86_64-linux-gnu.so
+7faf98090000-7faf98092000 rw-p 00017000 00:ce 3385                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/testing.cpython-38-x86_64-linux-gnu.so
+7faf98092000-7faf981d2000 rw-p 00000000 00:00 0 
+7faf981d2000-7faf981e3000 r--p 00000000 00:ce 3458                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/groupby.cpython-38-x86_64-linux-gnu.so
+7faf981e3000-7faf9838e000 r-xp 00011000 00:ce 3458                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/groupby.cpython-38-x86_64-linux-gnu.so
+7faf9838e000-7faf983b2000 r--p 001bc000 00:ce 3458                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/groupby.cpython-38-x86_64-linux-gnu.so
+7faf983b2000-7faf983b3000 r--p 001df000 00:ce 3458                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/groupby.cpython-38-x86_64-linux-gnu.so
+7faf983b3000-7faf983c0000 rw-p 001e0000 00:ce 3458                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/groupby.cpython-38-x86_64-linux-gnu.so
+7faf983c0000-7faf98444000 rw-p 00000000 00:00 0 
+7faf98444000-7faf9844c000 r--p 00000000 00:ce 3479                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/strptime.cpython-38-x86_64-linux-gnu.so
+7faf9844c000-7faf98482000 r-xp 00008000 00:ce 3479                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/strptime.cpython-38-x86_64-linux-gnu.so
+7faf98482000-7faf9848a000 r--p 0003e000 00:ce 3479                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/strptime.cpython-38-x86_64-linux-gnu.so
+7faf9848a000-7faf9848b000 r--p 00045000 00:ce 3479                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/strptime.cpython-38-x86_64-linux-gnu.so
+7faf9848b000-7faf98490000 rw-p 00046000 00:ce 3479                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/strptime.cpython-38-x86_64-linux-gnu.so
+7faf98490000-7faf984d1000 rw-p 00000000 00:00 0 
+7faf984d1000-7faf984d8000 r--p 00000000 00:ce 3382                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/reshape.cpython-38-x86_64-linux-gnu.so
+7faf984d8000-7faf98508000 r-xp 00007000 00:ce 3382                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/reshape.cpython-38-x86_64-linux-gnu.so
+7faf98508000-7faf98510000 r--p 00037000 00:ce 3382                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/reshape.cpython-38-x86_64-linux-gnu.so
+7faf98510000-7faf98511000 r--p 0003e000 00:ce 3382                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/reshape.cpython-38-x86_64-linux-gnu.so
+7faf98511000-7faf98515000 rw-p 0003f000 00:ce 3382                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/reshape.cpython-38-x86_64-linux-gnu.so
+7faf98515000-7faf98596000 rw-p 00000000 00:00 0 
+7faf98596000-7faf9859c000 r--p 00000000 00:ce 3950                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/window/indexers.cpython-38-x86_64-linux-gnu.so
+7faf9859c000-7faf985bb000 r-xp 00006000 00:ce 3950                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/window/indexers.cpython-38-x86_64-linux-gnu.so
+7faf985bb000-7faf985c1000 r--p 00025000 00:ce 3950                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/window/indexers.cpython-38-x86_64-linux-gnu.so
+7faf985c1000-7faf985c2000 r--p 0002a000 00:ce 3950                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/window/indexers.cpython-38-x86_64-linux-gnu.so
+7faf985c2000-7faf985c5000 rw-p 0002b000 00:ce 3950                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/window/indexers.cpython-38-x86_64-linux-gnu.so
+7faf985c5000-7faf985c6000 rw-p 00000000 00:00 0 
+7faf985c6000-7faf985cf000 r--p 00000000 00:ce 3946                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/window/aggregations.cpython-38-x86_64-linux-gnu.so
+7faf985cf000-7faf98617000 r-xp 00009000 00:ce 3946                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/window/aggregations.cpython-38-x86_64-linux-gnu.so
+7faf98617000-7faf98621000 r--p 00051000 00:ce 3946                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/window/aggregations.cpython-38-x86_64-linux-gnu.so
+7faf98621000-7faf98622000 r--p 0005a000 00:ce 3946                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/window/aggregations.cpython-38-x86_64-linux-gnu.so
+7faf98622000-7faf98628000 rw-p 0005b000 00:ce 3946                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/window/aggregations.cpython-38-x86_64-linux-gnu.so
+7faf98628000-7faf98669000 rw-p 00000000 00:00 0 
+7faf98669000-7faf9866f000 r-xp 00000000 00:ce 2736                       /usr/lib/python3.8/lib-dynload/mmap.cpython-38-x86_64-linux-gnu.so
+7faf9866f000-7faf9886e000 ---p 00006000 00:ce 2736                       /usr/lib/python3.8/lib-dynload/mmap.cpython-38-x86_64-linux-gnu.so
+7faf9886e000-7faf9886f000 r--p 00005000 00:ce 2736                       /usr/lib/python3.8/lib-dynload/mmap.cpython-38-x86_64-linux-gnu.so
+7faf9886f000-7faf98870000 rw-p 00006000 00:ce 2736                       /usr/lib/python3.8/lib-dynload/mmap.cpython-38-x86_64-linux-gnu.so
+7faf98870000-7faf988f0000 rw-p 00000000 00:00 0 
+7faf988f0000-7faf988f7000 r--p 00000000 00:ce 3461                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/writers.cpython-38-x86_64-linux-gnu.so
+7faf988f7000-7faf9891c000 r-xp 00007000 00:ce 3461                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/writers.cpython-38-x86_64-linux-gnu.so
+7faf9891c000-7faf98923000 r--p 0002c000 00:ce 3461                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/writers.cpython-38-x86_64-linux-gnu.so
+7faf98923000-7faf98924000 ---p 00033000 00:ce 3461                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/writers.cpython-38-x86_64-linux-gnu.so
+7faf98924000-7faf98925000 r--p 00033000 00:ce 3461                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/writers.cpython-38-x86_64-linux-gnu.so
+7faf98925000-7faf98929000 rw-p 00034000 00:ce 3461                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/writers.cpython-38-x86_64-linux-gnu.so
+7faf98929000-7faf9896a000 rw-p 00000000 00:00 0 
+7faf9896a000-7faf98972000 r--p 00000000 00:ce 3446                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/internals.cpython-38-x86_64-linux-gnu.so
+7faf98972000-7faf989b1000 r-xp 00008000 00:ce 3446                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/internals.cpython-38-x86_64-linux-gnu.so
+7faf989b1000-7faf989bb000 r--p 00047000 00:ce 3446                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/internals.cpython-38-x86_64-linux-gnu.so
+7faf989bb000-7faf989bc000 ---p 00051000 00:ce 3446                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/internals.cpython-38-x86_64-linux-gnu.so
+7faf989bc000-7faf989bd000 r--p 00051000 00:ce 3446                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/internals.cpython-38-x86_64-linux-gnu.so
+7faf989bd000-7faf989c3000 rw-p 00052000 00:ce 3446                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/internals.cpython-38-x86_64-linux-gnu.so
+7faf989c3000-7faf98b85000 rw-p 00000000 00:00 0 
+7faf98b85000-7faf98b87000 r--s 00010000 00:ce 4233                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar
+7faf98b87000-7faf98b89000 r--s 00007000 00:ce 4238                       /usr/share/java/java-atk-wrapper.jar
+7faf98b89000-7faf98b8d000 r--s 00040000 00:ce 4229                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar
+7faf98b8d000-7faf98b97000 r--s 00117000 00:ce 4223                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar
+7faf98b97000-7faf98c17000 rw-p 00000000 00:00 0 
+7faf98c17000-7faf98c1a000 r--p 00000000 00:ce 3408                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/reduction.cpython-38-x86_64-linux-gnu.so
+7faf98c1a000-7faf98c1d000 r-xp 00003000 00:ce 3408                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/reduction.cpython-38-x86_64-linux-gnu.so
+7faf98c1d000-7faf98c1e000 r--p 00006000 00:ce 3408                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/reduction.cpython-38-x86_64-linux-gnu.so
+7faf98c1e000-7faf98c1f000 ---p 00007000 00:ce 3408                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/reduction.cpython-38-x86_64-linux-gnu.so
+7faf98c1f000-7faf98c20000 r--p 00007000 00:ce 3408                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/reduction.cpython-38-x86_64-linux-gnu.so
+7faf98c20000-7faf98c21000 rw-p 00008000 00:ce 3408                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/reduction.cpython-38-x86_64-linux-gnu.so
+7faf98c21000-7faf98ca1000 rw-p 00000000 00:00 0 
+7faf98ca1000-7faf98caa000 r--p 00000000 00:ce 3396                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/sparse.cpython-38-x86_64-linux-gnu.so
+7faf98caa000-7faf98d5d000 r-xp 00009000 00:ce 3396                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/sparse.cpython-38-x86_64-linux-gnu.so
+7faf98d5d000-7faf98d6b000 r--p 000bc000 00:ce 3396                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/sparse.cpython-38-x86_64-linux-gnu.so
+7faf98d6b000-7faf98d6c000 r--p 000c9000 00:ce 3396                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/sparse.cpython-38-x86_64-linux-gnu.so
+7faf98d6c000-7faf98d72000 rw-p 000ca000 00:ce 3396                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/sparse.cpython-38-x86_64-linux-gnu.so
+7faf98d72000-7faf98db3000 rw-p 00000000 00:00 0 
+7faf98db3000-7faf98dc1000 r--p 00000000 00:ce 3416                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/join.cpython-38-x86_64-linux-gnu.so
+7faf98dc1000-7faf99019000 r-xp 0000e000 00:ce 3416                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/join.cpython-38-x86_64-linux-gnu.so
+7faf99019000-7faf99034000 r--p 00266000 00:ce 3416                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/join.cpython-38-x86_64-linux-gnu.so
+7faf99034000-7faf99035000 r--p 00280000 00:ce 3416                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/join.cpython-38-x86_64-linux-gnu.so
+7faf99035000-7faf9903d000 rw-p 00281000 00:ce 3416                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/join.cpython-38-x86_64-linux-gnu.so
+7faf9903d000-7faf99040000 rw-p 00000000 00:00 0 
+7faf99040000-7faf9904a000 r--p 00000000 00:ce 3420                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/index.cpython-38-x86_64-linux-gnu.so
+7faf9904a000-7faf990c4000 r-xp 0000a000 00:ce 3420                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/index.cpython-38-x86_64-linux-gnu.so
+7faf990c4000-7faf990d4000 r--p 00084000 00:ce 3420                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/index.cpython-38-x86_64-linux-gnu.so
+7faf990d4000-7faf990d5000 r--p 00093000 00:ce 3420                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/index.cpython-38-x86_64-linux-gnu.so
+7faf990d5000-7faf990dd000 rw-p 00094000 00:ce 3420                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/index.cpython-38-x86_64-linux-gnu.so
+7faf990dd000-7faf991df000 rw-p 00000000 00:00 0 
+7faf991df000-7faf991e3000 r--p 00000000 00:ce 3430                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/arrays.cpython-38-x86_64-linux-gnu.so
+7faf991e3000-7faf991f2000 r-xp 00004000 00:ce 3430                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/arrays.cpython-38-x86_64-linux-gnu.so
+7faf991f2000-7faf991f5000 r--p 00013000 00:ce 3430                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/arrays.cpython-38-x86_64-linux-gnu.so
+7faf991f5000-7faf991f6000 ---p 00016000 00:ce 3430                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/arrays.cpython-38-x86_64-linux-gnu.so
+7faf991f6000-7faf991f7000 r--p 00016000 00:ce 3430                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/arrays.cpython-38-x86_64-linux-gnu.so
+7faf991f7000-7faf991f9000 rw-p 00017000 00:ce 3430                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/arrays.cpython-38-x86_64-linux-gnu.so
+7faf991f9000-7faf992b9000 rw-p 00000000 00:00 0 
+7faf992b9000-7faf992bf000 r--p 00000000 00:ce 3406                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/ops.cpython-38-x86_64-linux-gnu.so
+7faf992bf000-7faf992ea000 r-xp 00006000 00:ce 3406                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/ops.cpython-38-x86_64-linux-gnu.so
+7faf992ea000-7faf992f1000 r--p 00031000 00:ce 3406                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/ops.cpython-38-x86_64-linux-gnu.so
+7faf992f1000-7faf992f2000 r--p 00037000 00:ce 3406                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/ops.cpython-38-x86_64-linux-gnu.so
+7faf992f2000-7faf992f6000 rw-p 00038000 00:ce 3406                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/ops.cpython-38-x86_64-linux-gnu.so
+7faf992f6000-7faf993f6000 rw-p 00000000 00:00 0 
+7faf993f6000-7faf993fc000 r--p 00000000 00:ce 3436                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/hashing.cpython-38-x86_64-linux-gnu.so
+7faf993fc000-7faf9941d000 r-xp 00006000 00:ce 3436                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/hashing.cpython-38-x86_64-linux-gnu.so
+7faf9941d000-7faf99423000 r--p 00027000 00:ce 3436                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/hashing.cpython-38-x86_64-linux-gnu.so
+7faf99423000-7faf99424000 ---p 0002d000 00:ce 3436                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/hashing.cpython-38-x86_64-linux-gnu.so
+7faf99424000-7faf99425000 r--p 0002d000 00:ce 3436                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/hashing.cpython-38-x86_64-linux-gnu.so
+7faf99425000-7faf99428000 rw-p 0002e000 00:ce 3436                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/hashing.cpython-38-x86_64-linux-gnu.so
+7faf99428000-7faf99429000 rw-p 00000000 00:00 0 
+7faf99429000-7faf99431000 r--p 00000000 00:ce 3407                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslib.cpython-38-x86_64-linux-gnu.so
+7faf99431000-7faf9946d000 r-xp 00008000 00:ce 3407                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslib.cpython-38-x86_64-linux-gnu.so
+7faf9946d000-7faf99476000 r--p 00044000 00:ce 3407                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslib.cpython-38-x86_64-linux-gnu.so
+7faf99476000-7faf99477000 r--p 0004c000 00:ce 3407                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslib.cpython-38-x86_64-linux-gnu.so
+7faf99477000-7faf9947c000 rw-p 0004d000 00:ce 3407                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslib.cpython-38-x86_64-linux-gnu.so
+7faf9947c000-7faf9947d000 rw-p 00000000 00:00 0 
+7faf9947d000-7faf9948b000 r--p 00000000 00:ce 3418                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/lib.cpython-38-x86_64-linux-gnu.so
+7faf9948b000-7faf99509000 r-xp 0000e000 00:ce 3418                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/lib.cpython-38-x86_64-linux-gnu.so
+7faf99509000-7faf9951b000 r--p 0008c000 00:ce 3418                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/lib.cpython-38-x86_64-linux-gnu.so
+7faf9951b000-7faf9951c000 r--p 0009d000 00:ce 3418                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/lib.cpython-38-x86_64-linux-gnu.so
+7faf9951c000-7faf9952a000 rw-p 0009e000 00:ce 3418                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/lib.cpython-38-x86_64-linux-gnu.so
+7faf9952a000-7faf9956d000 rw-p 00000000 00:00 0 
+7faf9956d000-7faf99580000 r--p 00000000 00:ce 3393                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/algos.cpython-38-x86_64-linux-gnu.so
+7faf99580000-7faf99737000 r-xp 00013000 00:ce 3393                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/algos.cpython-38-x86_64-linux-gnu.so
+7faf99737000-7faf9975a000 r--p 001ca000 00:ce 3393                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/algos.cpython-38-x86_64-linux-gnu.so
+7faf9975a000-7faf9975b000 r--p 001ec000 00:ce 3393                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/algos.cpython-38-x86_64-linux-gnu.so
+7faf9975b000-7faf99767000 rw-p 001ed000 00:ce 3393                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/algos.cpython-38-x86_64-linux-gnu.so
+7faf99767000-7faf9976b000 rw-p 00000000 00:00 0 
+7faf9976b000-7faf9976f000 r--p 00000000 00:ce 3460                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/ops_dispatch.cpython-38-x86_64-linux-gnu.so
+7faf9976f000-7faf99776000 r-xp 00004000 00:ce 3460                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/ops_dispatch.cpython-38-x86_64-linux-gnu.so
+7faf99776000-7faf99778000 r--p 0000b000 00:ce 3460                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/ops_dispatch.cpython-38-x86_64-linux-gnu.so
+7faf99778000-7faf99779000 r--p 0000c000 00:ce 3460                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/ops_dispatch.cpython-38-x86_64-linux-gnu.so
+7faf99779000-7faf9977b000 rw-p 0000d000 00:ce 3460                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/ops_dispatch.cpython-38-x86_64-linux-gnu.so
+7faf9977b000-7faf99781000 r--p 00000000 00:ce 3474                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/vectorized.cpython-38-x86_64-linux-gnu.so
+7faf99781000-7faf997a8000 r-xp 00006000 00:ce 3474                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/vectorized.cpython-38-x86_64-linux-gnu.so
+7faf997a8000-7faf997b0000 r--p 0002d000 00:ce 3474                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/vectorized.cpython-38-x86_64-linux-gnu.so
+7faf997b0000-7faf997b1000 r--p 00034000 00:ce 3474                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/vectorized.cpython-38-x86_64-linux-gnu.so
+7faf997b1000-7faf997b5000 rw-p 00035000 00:ce 3474                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/vectorized.cpython-38-x86_64-linux-gnu.so
+7faf997b5000-7faf997c0000 r--p 00000000 00:ce 3527                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/period.cpython-38-x86_64-linux-gnu.so
+7faf997c0000-7faf99809000 r-xp 0000b000 00:ce 3527                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/period.cpython-38-x86_64-linux-gnu.so
+7faf99809000-7faf9981d000 r--p 00054000 00:ce 3527                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/period.cpython-38-x86_64-linux-gnu.so
+7faf9981d000-7faf9981e000 r--p 00067000 00:ce 3527                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/period.cpython-38-x86_64-linux-gnu.so
+7faf9981e000-7faf99827000 rw-p 00068000 00:ce 3527                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/period.cpython-38-x86_64-linux-gnu.so
+7faf99827000-7faf99868000 rw-p 00000000 00:00 0 
+7faf99868000-7faf9986b000 r--p 00000000 00:ce 3398                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/properties.cpython-38-x86_64-linux-gnu.so
+7faf9986b000-7faf99875000 r-xp 00003000 00:ce 3398                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/properties.cpython-38-x86_64-linux-gnu.so
+7faf99875000-7faf99877000 r--p 0000d000 00:ce 3398                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/properties.cpython-38-x86_64-linux-gnu.so
+7faf99877000-7faf99878000 r--p 0000e000 00:ce 3398                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/properties.cpython-38-x86_64-linux-gnu.so
+7faf99878000-7faf9987a000 rw-p 0000f000 00:ce 3398                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/properties.cpython-38-x86_64-linux-gnu.so
+7faf9987a000-7faf99887000 r--p 00000000 00:ce 3500                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timestamps.cpython-38-x86_64-linux-gnu.so
+7faf99887000-7faf998ec000 r-xp 0000d000 00:ce 3500                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timestamps.cpython-38-x86_64-linux-gnu.so
+7faf998ec000-7faf99904000 r--p 00072000 00:ce 3500                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timestamps.cpython-38-x86_64-linux-gnu.so
+7faf99904000-7faf99905000 r--p 00089000 00:ce 3500                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timestamps.cpython-38-x86_64-linux-gnu.so
+7faf99905000-7faf99913000 rw-p 0008a000 00:ce 3500                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timestamps.cpython-38-x86_64-linux-gnu.so
+7faf99913000-7faf99955000 rw-p 00000000 00:00 0 
+7faf99955000-7faf99958000 r--p 00000000 00:ce 3473                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/ccalendar.cpython-38-x86_64-linux-gnu.so
+7faf99958000-7faf99963000 r-xp 00003000 00:ce 3473                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/ccalendar.cpython-38-x86_64-linux-gnu.so
+7faf99963000-7faf99965000 r--p 0000e000 00:ce 3473                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/ccalendar.cpython-38-x86_64-linux-gnu.so
+7faf99965000-7faf99966000 r--p 0000f000 00:ce 3473                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/ccalendar.cpython-38-x86_64-linux-gnu.so
+7faf99966000-7faf99968000 rw-p 00010000 00:ce 3473                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/ccalendar.cpython-38-x86_64-linux-gnu.so
+7faf99968000-7faf99971000 r--p 00000000 00:ce 3478                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/fields.cpython-38-x86_64-linux-gnu.so
+7faf99971000-7faf999ac000 r-xp 00009000 00:ce 3478                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/fields.cpython-38-x86_64-linux-gnu.so
+7faf999ac000-7faf999b6000 r--p 00044000 00:ce 3478                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/fields.cpython-38-x86_64-linux-gnu.so
+7faf999b6000-7faf999b7000 r--p 0004d000 00:ce 3478                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/fields.cpython-38-x86_64-linux-gnu.so
+7faf999b7000-7faf999bc000 rw-p 0004e000 00:ce 3478                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/fields.cpython-38-x86_64-linux-gnu.so
+7faf999bc000-7faf999bd000 rw-p 00000000 00:00 0 
+7faf999bd000-7faf999c9000 r--p 00000000 00:ce 3481                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timedeltas.cpython-38-x86_64-linux-gnu.so
+7faf999c9000-7faf99a2d000 r-xp 0000c000 00:ce 3481                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timedeltas.cpython-38-x86_64-linux-gnu.so
+7faf99a2d000-7faf99a3e000 r--p 00070000 00:ce 3481                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timedeltas.cpython-38-x86_64-linux-gnu.so
+7faf99a3e000-7faf99a3f000 r--p 00080000 00:ce 3481                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timedeltas.cpython-38-x86_64-linux-gnu.so
+7faf99a3f000-7faf99a48000 rw-p 00081000 00:ce 3481                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timedeltas.cpython-38-x86_64-linux-gnu.so
+7faf99a48000-7faf99a89000 rw-p 00000000 00:00 0 
+7faf99a89000-7faf99a9b000 r--p 00000000 00:ce 3483                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/offsets.cpython-38-x86_64-linux-gnu.so
+7faf99a9b000-7faf99b4f000 r-xp 00012000 00:ce 3483                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/offsets.cpython-38-x86_64-linux-gnu.so
+7faf99b4f000-7faf99b67000 r--p 000c6000 00:ce 3483                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/offsets.cpython-38-x86_64-linux-gnu.so
+7faf99b67000-7faf99b68000 r--p 000dd000 00:ce 3483                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/offsets.cpython-38-x86_64-linux-gnu.so
+7faf99b68000-7faf99b7a000 rw-p 000de000 00:ce 3483                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/offsets.cpython-38-x86_64-linux-gnu.so
+7faf99b7a000-7faf99b7d000 rw-p 00000000 00:00 0 
+7faf99b7d000-7faf99b88000 r--p 00000000 00:ce 3482                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/parsing.cpython-38-x86_64-linux-gnu.so
+7faf99b88000-7faf99bdd000 r-xp 0000b000 00:ce 3482                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/parsing.cpython-38-x86_64-linux-gnu.so
+7faf99bdd000-7faf99be9000 r--p 00060000 00:ce 3482                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/parsing.cpython-38-x86_64-linux-gnu.so
+7faf99be9000-7faf99bea000 ---p 0006c000 00:ce 3482                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/parsing.cpython-38-x86_64-linux-gnu.so
+7faf99bea000-7faf99beb000 r--p 0006c000 00:ce 3482                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/parsing.cpython-38-x86_64-linux-gnu.so
+7faf99beb000-7faf99bf3000 rw-p 0006d000 00:ce 3482                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/parsing.cpython-38-x86_64-linux-gnu.so
+7faf99bf3000-7faf99c34000 rw-p 00000000 00:00 0 
+7faf99c34000-7faf99c3b000 r--p 00000000 00:ce 3490                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timezones.cpython-38-x86_64-linux-gnu.so
+7faf99c3b000-7faf99c68000 r-xp 00007000 00:ce 3490                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timezones.cpython-38-x86_64-linux-gnu.so
+7faf99c68000-7faf99c70000 r--p 00034000 00:ce 3490                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timezones.cpython-38-x86_64-linux-gnu.so
+7faf99c70000-7faf99c71000 r--p 0003b000 00:ce 3490                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timezones.cpython-38-x86_64-linux-gnu.so
+7faf99c71000-7faf99c75000 rw-p 0003c000 00:ce 3490                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/timezones.cpython-38-x86_64-linux-gnu.so
+7faf99c75000-7faf99c76000 rw-p 00000000 00:00 0 
+7faf99c76000-7faf99c7d000 r--p 00000000 00:ce 3515                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/tzconversion.cpython-38-x86_64-linux-gnu.so
+7faf99c7d000-7faf99cb3000 r-xp 00007000 00:ce 3515                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/tzconversion.cpython-38-x86_64-linux-gnu.so
+7faf99cb3000-7faf99cbc000 r--p 0003d000 00:ce 3515                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/tzconversion.cpython-38-x86_64-linux-gnu.so
+7faf99cbc000-7faf99cbd000 r--p 00045000 00:ce 3515                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/tzconversion.cpython-38-x86_64-linux-gnu.so
+7faf99cbd000-7faf99cc1000 rw-p 00046000 00:ce 3515                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/tzconversion.cpython-38-x86_64-linux-gnu.so
+7faf99cc1000-7faf99cc2000 rw-p 00000000 00:00 0 
+7faf99cc2000-7faf99cc9000 r--p 00000000 00:ce 3513                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/nattype.cpython-38-x86_64-linux-gnu.so
+7faf99cc9000-7faf99ce7000 r-xp 00007000 00:ce 3513                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/nattype.cpython-38-x86_64-linux-gnu.so
+7faf99ce7000-7faf99cf2000 r--p 00025000 00:ce 3513                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/nattype.cpython-38-x86_64-linux-gnu.so
+7faf99cf2000-7faf99cf3000 r--p 0002f000 00:ce 3513                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/nattype.cpython-38-x86_64-linux-gnu.so
+7faf99cf3000-7faf99cf8000 rw-p 00030000 00:ce 3513                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/nattype.cpython-38-x86_64-linux-gnu.so
+7faf99cf8000-7faf99cf9000 rw-p 00000000 00:00 0 
+7faf99cf9000-7faf99cfc000 r--p 00000000 00:ce 3484                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/base.cpython-38-x86_64-linux-gnu.so
+7faf99cfc000-7faf99d01000 r-xp 00003000 00:ce 3484                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/base.cpython-38-x86_64-linux-gnu.so
+7faf99d01000-7faf99d03000 r--p 00008000 00:ce 3484                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/base.cpython-38-x86_64-linux-gnu.so
+7faf99d03000-7faf99d04000 r--p 00009000 00:ce 3484                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/base.cpython-38-x86_64-linux-gnu.so
+7faf99d04000-7faf99d05000 rw-p 0000a000 00:ce 3484                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/base.cpython-38-x86_64-linux-gnu.so
+7faf99d05000-7faf99d0c000 r--p 00000000 00:ce 3498                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/conversion.cpython-38-x86_64-linux-gnu.so
+7faf99d0c000-7faf99d37000 r-xp 00007000 00:ce 3498                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/conversion.cpython-38-x86_64-linux-gnu.so
+7faf99d37000-7faf99d3f000 r--p 00032000 00:ce 3498                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/conversion.cpython-38-x86_64-linux-gnu.so
+7faf99d3f000-7faf99d40000 r--p 00039000 00:ce 3498                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/conversion.cpython-38-x86_64-linux-gnu.so
+7faf99d40000-7faf99d44000 rw-p 0003a000 00:ce 3498                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/conversion.cpython-38-x86_64-linux-gnu.so
+7faf99d44000-7faf99d49000 r--p 00000000 00:ce 3480                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/np_datetime.cpython-38-x86_64-linux-gnu.so
+7faf99d49000-7faf99d60000 r-xp 00005000 00:ce 3480                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/np_datetime.cpython-38-x86_64-linux-gnu.so
+7faf99d60000-7faf99d64000 r--p 0001c000 00:ce 3480                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/np_datetime.cpython-38-x86_64-linux-gnu.so
+7faf99d64000-7faf99d65000 ---p 00020000 00:ce 3480                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/np_datetime.cpython-38-x86_64-linux-gnu.so
+7faf99d65000-7faf99d66000 r--p 00020000 00:ce 3480                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/np_datetime.cpython-38-x86_64-linux-gnu.so
+7faf99d66000-7faf99d68000 rw-p 00021000 00:ce 3480                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/np_datetime.cpython-38-x86_64-linux-gnu.so
+7faf99d68000-7faf99da8000 rw-p 00000000 00:00 0 
+7faf99da8000-7faf99dae000 r--p 00000000 00:ce 3471                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/dtypes.cpython-38-x86_64-linux-gnu.so
+7faf99dae000-7faf99dc4000 r-xp 00006000 00:ce 3471                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/dtypes.cpython-38-x86_64-linux-gnu.so
+7faf99dc4000-7faf99dc9000 r--p 0001c000 00:ce 3471                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/dtypes.cpython-38-x86_64-linux-gnu.so
+7faf99dc9000-7faf99dca000 r--p 00020000 00:ce 3471                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/dtypes.cpython-38-x86_64-linux-gnu.so
+7faf99dca000-7faf99dce000 rw-p 00021000 00:ce 3471                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/tslibs/dtypes.cpython-38-x86_64-linux-gnu.so
+7faf99dce000-7faf99dd5000 r--p 00000000 00:ce 3424                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/missing.cpython-38-x86_64-linux-gnu.so
+7faf99dd5000-7faf99df4000 r-xp 00007000 00:ce 3424                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/missing.cpython-38-x86_64-linux-gnu.so
+7faf99df4000-7faf99dfa000 r--p 00026000 00:ce 3424                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/missing.cpython-38-x86_64-linux-gnu.so
+7faf99dfa000-7faf99dfb000 r--p 0002b000 00:ce 3424                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/missing.cpython-38-x86_64-linux-gnu.so
+7faf99dfb000-7faf99dff000 rw-p 0002c000 00:ce 3424                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/missing.cpython-38-x86_64-linux-gnu.so
+7faf99dff000-7faf99e00000 rw-p 00000000 00:00 0 
+7faf99e00000-7faf99e12000 r--p 00000000 00:ce 3442                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/hashtable.cpython-38-x86_64-linux-gnu.so
+7faf99e12000-7faf99f4c000 r-xp 00012000 00:ce 3442                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/hashtable.cpython-38-x86_64-linux-gnu.so
+7faf99f4c000-7faf99f6b000 r--p 0014c000 00:ce 3442                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/hashtable.cpython-38-x86_64-linux-gnu.so
+7faf99f6b000-7faf99f6c000 r--p 0016a000 00:ce 3442                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/hashtable.cpython-38-x86_64-linux-gnu.so
+7faf99f6c000-7faf99f89000 rw-p 0016b000 00:ce 3442                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/hashtable.cpython-38-x86_64-linux-gnu.so
+7faf99f89000-7faf99f8c000 rw-p 00000000 00:00 0 
+7faf99f8c000-7faf99f9b000 r--p 00000000 00:ce 3410                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/interval.cpython-38-x86_64-linux-gnu.so
+7faf99f9b000-7faf9a0b7000 r-xp 0000f000 00:ce 3410                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/interval.cpython-38-x86_64-linux-gnu.so
+7faf9a0b7000-7faf9a0d7000 r--p 0012b000 00:ce 3410                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/interval.cpython-38-x86_64-linux-gnu.so
+7faf9a0d7000-7faf9a0d8000 r--p 0014a000 00:ce 3410                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/interval.cpython-38-x86_64-linux-gnu.so
+7faf9a0d8000-7faf9a0e4000 rw-p 0014b000 00:ce 3410                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/interval.cpython-38-x86_64-linux-gnu.so
+7faf9a0e4000-7faf9a1a6000 rw-p 00000000 00:00 0 
+7faf9a1a6000-7faf9a1a8000 r-xp 00000000 00:ce 2722                       /usr/lib/python3.8/lib-dynload/_opcode.cpython-38-x86_64-linux-gnu.so
+7faf9a1a8000-7faf9a3a7000 ---p 00002000 00:ce 2722                       /usr/lib/python3.8/lib-dynload/_opcode.cpython-38-x86_64-linux-gnu.so
+7faf9a3a7000-7faf9a3a8000 r--p 00001000 00:ce 2722                       /usr/lib/python3.8/lib-dynload/_opcode.cpython-38-x86_64-linux-gnu.so
+7faf9a3a8000-7faf9a3a9000 rw-p 00002000 00:ce 2722                       /usr/lib/python3.8/lib-dynload/_opcode.cpython-38-x86_64-linux-gnu.so
+7faf9a3a9000-7faf9a429000 rw-p 00000000 00:00 0 
+7faf9a429000-7faf9a436000 r--p 00000000 00:ce 3277                       /usr/local/lib/python3.8/dist-packages/numpy/random/_generator.cpython-38-x86_64-linux-gnu.so
+7faf9a436000-7faf9a4ad000 r-xp 0000d000 00:ce 3277                       /usr/local/lib/python3.8/dist-packages/numpy/random/_generator.cpython-38-x86_64-linux-gnu.so
+7faf9a4ad000-7faf9a4de000 r--p 00084000 00:ce 3277                       /usr/local/lib/python3.8/dist-packages/numpy/random/_generator.cpython-38-x86_64-linux-gnu.so
+7faf9a4de000-7faf9a4df000 r--p 000b4000 00:ce 3277                       /usr/local/lib/python3.8/dist-packages/numpy/random/_generator.cpython-38-x86_64-linux-gnu.so
+7faf9a4df000-7faf9a506000 rw-p 000b5000 00:ce 3277                       /usr/local/lib/python3.8/dist-packages/numpy/random/_generator.cpython-38-x86_64-linux-gnu.so
+7faf9a506000-7faf9a508000 rw-p 00000000 00:00 0 
+7faf9a508000-7faf9a50c000 r--p 00000000 00:ce 3279                       /usr/local/lib/python3.8/dist-packages/numpy/random/_pcg64.cpython-38-x86_64-linux-gnu.so
+7faf9a50c000-7faf9a51c000 r-xp 00004000 00:ce 3279                       /usr/local/lib/python3.8/dist-packages/numpy/random/_pcg64.cpython-38-x86_64-linux-gnu.so
+7faf9a51c000-7faf9a520000 r--p 00014000 00:ce 3279                       /usr/local/lib/python3.8/dist-packages/numpy/random/_pcg64.cpython-38-x86_64-linux-gnu.so
+7faf9a520000-7faf9a521000 r--p 00017000 00:ce 3279                       /usr/local/lib/python3.8/dist-packages/numpy/random/_pcg64.cpython-38-x86_64-linux-gnu.so
+7faf9a521000-7faf9a524000 rw-p 00018000 00:ce 3279                       /usr/local/lib/python3.8/dist-packages/numpy/random/_pcg64.cpython-38-x86_64-linux-gnu.so
+7faf9a524000-7faf9a527000 r--p 00000000 00:ce 3278                       /usr/local/lib/python3.8/dist-packages/numpy/random/_philox.cpython-38-x86_64-linux-gnu.so
+7faf9a527000-7faf9a534000 r-xp 00003000 00:ce 3278                       /usr/local/lib/python3.8/dist-packages/numpy/random/_philox.cpython-38-x86_64-linux-gnu.so
+7faf9a534000-7faf9a538000 r--p 00010000 00:ce 3278                       /usr/local/lib/python3.8/dist-packages/numpy/random/_philox.cpython-38-x86_64-linux-gnu.so
+7faf9a538000-7faf9a539000 r--p 00013000 00:ce 3278                       /usr/local/lib/python3.8/dist-packages/numpy/random/_philox.cpython-38-x86_64-linux-gnu.so
+7faf9a539000-7faf9a53b000 rw-p 00014000 00:ce 3278                       /usr/local/lib/python3.8/dist-packages/numpy/random/_philox.cpython-38-x86_64-linux-gnu.so
+7faf9a53b000-7faf9a540000 r--p 00000000 00:ce 3275                       /usr/local/lib/python3.8/dist-packages/numpy/random/_bounded_integers.cpython-38-x86_64-linux-gnu.so
+7faf9a540000-7faf9a58a000 r-xp 00005000 00:ce 3275                       /usr/local/lib/python3.8/dist-packages/numpy/random/_bounded_integers.cpython-38-x86_64-linux-gnu.so
+7faf9a58a000-7faf9a593000 r--p 0004f000 00:ce 3275                       /usr/local/lib/python3.8/dist-packages/numpy/random/_bounded_integers.cpython-38-x86_64-linux-gnu.so
+7faf9a593000-7faf9a594000 r--p 00057000 00:ce 3275                       /usr/local/lib/python3.8/dist-packages/numpy/random/_bounded_integers.cpython-38-x86_64-linux-gnu.so
+7faf9a594000-7faf9a595000 rw-p 00058000 00:ce 3275                       /usr/local/lib/python3.8/dist-packages/numpy/random/_bounded_integers.cpython-38-x86_64-linux-gnu.so
+7faf9a595000-7faf9a596000 rw-p 00000000 00:00 0 
+7faf9a596000-7faf9a59b000 r--p 00000000 00:ce 3255                       /usr/local/lib/python3.8/dist-packages/numpy/random/_common.cpython-38-x86_64-linux-gnu.so
+7faf9a59b000-7faf9a5d4000 r-xp 00005000 00:ce 3255                       /usr/local/lib/python3.8/dist-packages/numpy/random/_common.cpython-38-x86_64-linux-gnu.so
+7faf9a5d4000-7faf9a5d8000 r--p 0003e000 00:ce 3255                       /usr/local/lib/python3.8/dist-packages/numpy/random/_common.cpython-38-x86_64-linux-gnu.so
+7faf9a5d8000-7faf9a5d9000 ---p 00042000 00:ce 3255                       /usr/local/lib/python3.8/dist-packages/numpy/random/_common.cpython-38-x86_64-linux-gnu.so
+7faf9a5d9000-7faf9a5da000 r--p 00042000 00:ce 3255                       /usr/local/lib/python3.8/dist-packages/numpy/random/_common.cpython-38-x86_64-linux-gnu.so
+7faf9a5da000-7faf9a5dc000 rw-p 00043000 00:ce 3255                       /usr/local/lib/python3.8/dist-packages/numpy/random/_common.cpython-38-x86_64-linux-gnu.so
+7faf9a5dc000-7faf9a5dd000 rw-p 00000000 00:00 0 
+7faf9a5dd000-7faf9a5e3000 r--p 00000000 00:ce 3268                       /usr/local/lib/python3.8/dist-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so
+7faf9a5e3000-7faf9a5fe000 r-xp 00006000 00:ce 3268                       /usr/local/lib/python3.8/dist-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so
+7faf9a5fe000-7faf9a606000 r--p 00021000 00:ce 3268                       /usr/local/lib/python3.8/dist-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so
+7faf9a606000-7faf9a607000 r--p 00028000 00:ce 3268                       /usr/local/lib/python3.8/dist-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so
+7faf9a607000-7faf9a60c000 rw-p 00029000 00:ce 3268                       /usr/local/lib/python3.8/dist-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so
+7faf9a60c000-7faf9a618000 r--p 00000000 00:ce 3273                       /usr/local/lib/python3.8/dist-packages/numpy/random/mtrand.cpython-38-x86_64-linux-gnu.so
+7faf9a618000-7faf9a667000 r-xp 0000c000 00:ce 3273                       /usr/local/lib/python3.8/dist-packages/numpy/random/mtrand.cpython-38-x86_64-linux-gnu.so
+7faf9a667000-7faf9a695000 r--p 0005b000 00:ce 3273                       /usr/local/lib/python3.8/dist-packages/numpy/random/mtrand.cpython-38-x86_64-linux-gnu.so
+7faf9a695000-7faf9a696000 r--p 00088000 00:ce 3273                       /usr/local/lib/python3.8/dist-packages/numpy/random/mtrand.cpython-38-x86_64-linux-gnu.so
+7faf9a696000-7faf9a6be000 rw-p 00089000 00:ce 3273                       /usr/local/lib/python3.8/dist-packages/numpy/random/mtrand.cpython-38-x86_64-linux-gnu.so
+7faf9a6be000-7faf9a7c0000 rw-p 00000000 00:00 0 
+7faf9a7c0000-7faf9a7c7000 r--p 00000000 00:ce 3185                       /usr/local/lib/python3.8/dist-packages/numpy/linalg/_umath_linalg.cpython-38-x86_64-linux-gnu.so
+7faf9a7c7000-7faf9a7e8000 r-xp 00007000 00:ce 3185                       /usr/local/lib/python3.8/dist-packages/numpy/linalg/_umath_linalg.cpython-38-x86_64-linux-gnu.so
+7faf9a7e8000-7faf9a7ed000 r--p 00028000 00:ce 3185                       /usr/local/lib/python3.8/dist-packages/numpy/linalg/_umath_linalg.cpython-38-x86_64-linux-gnu.so
+7faf9a7ed000-7faf9a7ee000 ---p 0002d000 00:ce 3185                       /usr/local/lib/python3.8/dist-packages/numpy/linalg/_umath_linalg.cpython-38-x86_64-linux-gnu.so
+7faf9a7ee000-7faf9a7ef000 r--p 0002d000 00:ce 3185                       /usr/local/lib/python3.8/dist-packages/numpy/linalg/_umath_linalg.cpython-38-x86_64-linux-gnu.so
+7faf9a7ef000-7faf9a7f0000 rw-p 0002e000 00:ce 3185                       /usr/local/lib/python3.8/dist-packages/numpy/linalg/_umath_linalg.cpython-38-x86_64-linux-gnu.so
+7faf9a7f0000-7faf9a7f1000 rw-p 00000000 00:00 0 
+7faf9a7f1000-7faf9a7f3000 rw-p 00035000 00:ce 3185                       /usr/local/lib/python3.8/dist-packages/numpy/linalg/_umath_linalg.cpython-38-x86_64-linux-gnu.so
+7faf9a7f3000-7faf9a7f5000 rw-p 00037000 00:ce 3185                       /usr/local/lib/python3.8/dist-packages/numpy/linalg/_umath_linalg.cpython-38-x86_64-linux-gnu.so
+7faf9a7f5000-7faf9a875000 rw-p 00000000 00:00 0 
+7faf9a875000-7faf9a87c000 r-xp 00000000 00:ce 3113                       /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7faf9a87c000-7faf9aa7b000 ---p 00007000 00:ce 3113                       /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7faf9aa7b000-7faf9aa7c000 r--p 00006000 00:ce 3113                       /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7faf9aa7c000-7faf9aa7d000 rw-p 00007000 00:ce 3113                       /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7faf9aa7d000-7faf9aa98000 r-xp 00000000 00:ce 2716                       /usr/lib/python3.8/lib-dynload/_ctypes.cpython-38-x86_64-linux-gnu.so
+7faf9aa98000-7faf9ac98000 ---p 0001b000 00:ce 2716                       /usr/lib/python3.8/lib-dynload/_ctypes.cpython-38-x86_64-linux-gnu.so
+7faf9ac98000-7faf9ac99000 r--p 0001b000 00:ce 2716                       /usr/lib/python3.8/lib-dynload/_ctypes.cpython-38-x86_64-linux-gnu.so
+7faf9ac99000-7faf9ac9d000 rw-p 0001c000 00:ce 2716                       /usr/lib/python3.8/lib-dynload/_ctypes.cpython-38-x86_64-linux-gnu.so
+7faf9ac9d000-7faf9ad5d000 rw-p 00000000 00:00 0 
+7faf9ad5d000-7faf9ad5e000 r-xp 00000000 00:ce 2717                       /usr/lib/python3.8/lib-dynload/_contextvars.cpython-38-x86_64-linux-gnu.so
+7faf9ad5e000-7faf9af5d000 ---p 00001000 00:ce 2717                       /usr/lib/python3.8/lib-dynload/_contextvars.cpython-38-x86_64-linux-gnu.so
+7faf9af5d000-7faf9af5e000 r--p 00000000 00:ce 2717                       /usr/lib/python3.8/lib-dynload/_contextvars.cpython-38-x86_64-linux-gnu.so
+7faf9af5e000-7faf9af5f000 rw-p 00001000 00:ce 2717                       /usr/lib/python3.8/lib-dynload/_contextvars.cpython-38-x86_64-linux-gnu.so
+7faf9af5f000-7faf9b05f000 rw-p 00000000 00:00 0 
+7faf9b05f000-7fafa105f000 rw-p 00000000 00:00 0 
+7fafa105f000-7fafa1060000 ---p 00000000 00:00 0 
+7fafa1060000-7fafa1860000 rw-p 00000000 00:00 0 
+7fafa1860000-7fafa1861000 ---p 00000000 00:00 0 
+7fafa1861000-7fafa2061000 rw-p 00000000 00:00 0 
+7fafa2061000-7fafa2062000 ---p 00000000 00:00 0 
+7fafa2062000-7fafa2862000 rw-p 00000000 00:00 0 
+7fafa2862000-7fafa289d000 r-xp 00000000 00:ce 3070                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libquadmath-96973f99.so.0.0.0
+7fafa289d000-7fafa2a9c000 ---p 0003b000 00:ce 3070                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libquadmath-96973f99.so.0.0.0
+7fafa2a9c000-7fafa2a9d000 r--p 0003a000 00:ce 3070                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libquadmath-96973f99.so.0.0.0
+7fafa2a9d000-7fafa2a9e000 rw-p 0003b000 00:ce 3070                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libquadmath-96973f99.so.0.0.0
+7fafa2a9e000-7fafa2a9f000 rw-p 0003c000 00:ce 3070                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libquadmath-96973f99.so.0.0.0
+7fafa2a9f000-7fafa2d15000 r-xp 00000000 00:ce 3069                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libgfortran-040039e1.so.5.0.0
+7fafa2d15000-7fafa2f14000 ---p 00276000 00:ce 3069                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libgfortran-040039e1.so.5.0.0
+7fafa2f14000-7fafa2f15000 r--p 00275000 00:ce 3069                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libgfortran-040039e1.so.5.0.0
+7fafa2f15000-7fafa2f17000 rw-p 00276000 00:ce 3069                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libgfortran-040039e1.so.5.0.0
+7fafa2f17000-7fafa2f23000 rw-p 0027b000 00:ce 3069                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libgfortran-040039e1.so.5.0.0
+7fafa2f23000-7fafa2f2c000 rw-p 00287000 00:ce 3069                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libgfortran-040039e1.so.5.0.0
+7fafa2f2c000-7fafa3029000 r--p 00000000 00:ce 3068                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libopenblas64_p-r0-15028c96.3.21.so
+7fafa3029000-7fafa3031000 r-xp 000fd000 00:ce 3068                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libopenblas64_p-r0-15028c96.3.21.so
+7fafa3031000-7fafa3034000 ---p 00105000 00:ce 3068                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libopenblas64_p-r0-15028c96.3.21.so
+7fafa3034000-7fafa4adf000 r-xp 00108000 00:ce 3068                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libopenblas64_p-r0-15028c96.3.21.so
+7fafa4adf000-7fafa4cdb000 r--p 01bb3000 00:ce 3068                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libopenblas64_p-r0-15028c96.3.21.so
+7fafa4cdb000-7fafa4cdc000 ---p 01daf000 00:ce 3068                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libopenblas64_p-r0-15028c96.3.21.so
+7fafa4cdc000-7fafa4ce2000 r--p 01daf000 00:ce 3068                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libopenblas64_p-r0-15028c96.3.21.so
+7fafa4ce2000-7fafa4cf7000 rw-p 01db5000 00:ce 3068                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libopenblas64_p-r0-15028c96.3.21.so
+7fafa4cf7000-7fafa4d04000 rw-p 00000000 00:00 0 
+7fafa4d04000-7fafa4d62000 rw-p 01ecc000 00:ce 3068                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libopenblas64_p-r0-15028c96.3.21.so
+7fafa4d62000-7fafa4da6000 rw-p 01f2a000 00:ce 3068                       /usr/local/lib/python3.8/dist-packages/numpy.libs/libopenblas64_p-r0-15028c96.3.21.so
+7fafa4da6000-7fafa4dce000 r--p 00000000 00:ce 3034                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so
+7fafa4dce000-7fafa5209000 r-xp 00028000 00:ce 3034                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so
+7fafa5209000-7fafa5320000 r--p 00463000 00:ce 3034                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so
+7fafa5320000-7fafa5321000 ---p 0057a000 00:ce 3034                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so
+7fafa5321000-7fafa5323000 r--p 0057a000 00:ce 3034                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so
+7fafa5323000-7fafa5345000 rw-p 0057c000 00:ce 3034                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so
+7fafa5345000-7fafa5366000 rw-p 00000000 00:00 0 
+7fafa5366000-7fafa536a000 rw-p 005fe000 00:ce 3034                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so
+7fafa536a000-7fafa536d000 rw-p 00602000 00:ce 3034                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so
+7fafa536d000-7fafa536e000 r--p 00000000 00:00 0 
+7fafa536e000-7fafa5371000 r--s 0000f000 00:ce 4226                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar
+7fafa5371000-7fafa5374000 r--p 00000000 00:ce 3395                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/indexing.cpython-38-x86_64-linux-gnu.so
+7fafa5374000-7fafa537a000 r-xp 00003000 00:ce 3395                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/indexing.cpython-38-x86_64-linux-gnu.so
+7fafa537a000-7fafa537c000 r--p 00009000 00:ce 3395                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/indexing.cpython-38-x86_64-linux-gnu.so
+7fafa537c000-7fafa537d000 r--p 0000a000 00:ce 3395                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/indexing.cpython-38-x86_64-linux-gnu.so
+7fafa537d000-7fafa537e000 rw-p 0000b000 00:ce 3395                       /usr/local/lib/python3.8/dist-packages/pandas/_libs/indexing.cpython-38-x86_64-linux-gnu.so
+7fafa537e000-7fafa543e000 rw-p 00000000 00:00 0 
+7fafa543e000-7fafa5475000 r-xp 00000000 00:ce 2938                       /usr/lib/x86_64-linux-gnu/libmpdec.so.2.4.2
+7fafa5475000-7fafa5674000 ---p 00037000 00:ce 2938                       /usr/lib/x86_64-linux-gnu/libmpdec.so.2.4.2
+7fafa5674000-7fafa5675000 r--p 00036000 00:ce 2938                       /usr/lib/x86_64-linux-gnu/libmpdec.so.2.4.2
+7fafa5675000-7fafa5676000 rw-p 00037000 00:ce 2938                       /usr/lib/x86_64-linux-gnu/libmpdec.so.2.4.2
+7fafa5676000-7fafa569e000 r-xp 00000000 00:ce 2704                       /usr/lib/python3.8/lib-dynload/_decimal.cpython-38-x86_64-linux-gnu.so
+7fafa569e000-7fafa589d000 ---p 00028000 00:ce 2704                       /usr/lib/python3.8/lib-dynload/_decimal.cpython-38-x86_64-linux-gnu.so
+7fafa589d000-7fafa589e000 r--p 00027000 00:ce 2704                       /usr/lib/python3.8/lib-dynload/_decimal.cpython-38-x86_64-linux-gnu.so
+7fafa589e000-7fafa58a1000 rw-p 00028000 00:ce 2704                       /usr/lib/python3.8/lib-dynload/_decimal.cpython-38-x86_64-linux-gnu.so
+7fafa58a1000-7fafa58e1000 rw-p 00000000 00:00 0 
+7fafa58e1000-7fafa58f8000 r-xp 00000000 00:ce 148                        /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fafa58f8000-7fafa5af7000 ---p 00017000 00:ce 148                        /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fafa5af7000-7fafa5af8000 r--p 00016000 00:ce 148                        /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fafa5af8000-7fafa5af9000 rw-p 00017000 00:ce 148                        /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fafa5af9000-7fafa5c72000 r-xp 00000000 00:ce 145                        /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7fafa5c72000-7fafa5e72000 ---p 00179000 00:ce 145                        /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7fafa5e72000-7fafa5e7c000 r--p 00179000 00:ce 145                        /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7fafa5e7c000-7fafa5e7e000 rw-p 00183000 00:ce 145                        /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7fafa5e7e000-7fafa5e82000 rw-p 00000000 00:00 0 
+7fafa5e82000-7fafa5f27000 r-xp 00000000 00:ce 2527                       /usr/local/lib/python3.8/dist-packages/_jpype.cpython-38-x86_64-linux-gnu.so
+7fafa5f27000-7fafa6126000 ---p 000a5000 00:ce 2527                       /usr/local/lib/python3.8/dist-packages/_jpype.cpython-38-x86_64-linux-gnu.so
+7fafa6126000-7fafa612a000 r--p 000a4000 00:ce 2527                       /usr/local/lib/python3.8/dist-packages/_jpype.cpython-38-x86_64-linux-gnu.so
+7fafa612a000-7fafa612e000 rw-p 000a8000 00:ce 2527                       /usr/local/lib/python3.8/dist-packages/_jpype.cpython-38-x86_64-linux-gnu.so
+7fafa612e000-7fafa61ee000 rw-p 00000000 00:00 0 
+7fafa61ee000-7fafa626e000 r-xp 00000000 00:ce 337                        /usr/lib/x86_64-linux-gnu/libssl.so.1.1
+7fafa626e000-7fafa646e000 ---p 00080000 00:ce 337                        /usr/lib/x86_64-linux-gnu/libssl.so.1.1
+7fafa646e000-7fafa6477000 r--p 00080000 00:ce 337                        /usr/lib/x86_64-linux-gnu/libssl.so.1.1
+7fafa6477000-7fafa647b000 rw-p 00089000 00:ce 337                        /usr/lib/x86_64-linux-gnu/libssl.so.1.1
+7fafa647b000-7fafa6495000 r-xp 00000000 00:ce 2725                       /usr/lib/python3.8/lib-dynload/_ssl.cpython-38-x86_64-linux-gnu.so
+7fafa6495000-7fafa6694000 ---p 0001a000 00:ce 2725                       /usr/lib/python3.8/lib-dynload/_ssl.cpython-38-x86_64-linux-gnu.so
+7fafa6694000-7fafa6695000 r--p 00019000 00:ce 2725                       /usr/lib/python3.8/lib-dynload/_ssl.cpython-38-x86_64-linux-gnu.so
+7fafa6695000-7fafa6699000 rw-p 0001a000 00:ce 2725                       /usr/lib/python3.8/lib-dynload/_ssl.cpython-38-x86_64-linux-gnu.so
+7fafa6699000-7fafa6859000 rw-p 00000000 00:00 0 
+7fafa6859000-7fafa687d000 r-xp 00000000 00:ce 76                         /lib/x86_64-linux-gnu/liblzma.so.5.2.2
+7fafa687d000-7fafa6a7d000 ---p 00024000 00:ce 76                         /lib/x86_64-linux-gnu/liblzma.so.5.2.2
+7fafa6a7d000-7fafa6a7e000 r--p 00024000 00:ce 76                         /lib/x86_64-linux-gnu/liblzma.so.5.2.2
+7fafa6a7e000-7fafa6a7f000 rw-p 00025000 00:ce 76                         /lib/x86_64-linux-gnu/liblzma.so.5.2.2
+7fafa6a7f000-7fafa6a87000 r-xp 00000000 00:ce 2729                       /usr/lib/python3.8/lib-dynload/_lzma.cpython-38-x86_64-linux-gnu.so
+7fafa6a87000-7fafa6c86000 ---p 00008000 00:ce 2729                       /usr/lib/python3.8/lib-dynload/_lzma.cpython-38-x86_64-linux-gnu.so
+7fafa6c86000-7fafa6c87000 r--p 00007000 00:ce 2729                       /usr/lib/python3.8/lib-dynload/_lzma.cpython-38-x86_64-linux-gnu.so
+7fafa6c87000-7fafa6c88000 rw-p 00008000 00:ce 2729                       /usr/lib/python3.8/lib-dynload/_lzma.cpython-38-x86_64-linux-gnu.so
+7fafa6c88000-7fafa6c97000 r-xp 00000000 00:ce 283                        /lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7fafa6c97000-7fafa6e96000 ---p 0000f000 00:ce 283                        /lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7fafa6e96000-7fafa6e97000 r--p 0000e000 00:ce 283                        /lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7fafa6e97000-7fafa6e98000 rw-p 0000f000 00:ce 283                        /lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7fafa6e98000-7fafa6e9d000 r-xp 00000000 00:ce 2740                       /usr/lib/python3.8/lib-dynload/_bz2.cpython-38-x86_64-linux-gnu.so
+7fafa6e9d000-7fafa709c000 ---p 00005000 00:ce 2740                       /usr/lib/python3.8/lib-dynload/_bz2.cpython-38-x86_64-linux-gnu.so
+7fafa709c000-7fafa709d000 r--p 00004000 00:ce 2740                       /usr/lib/python3.8/lib-dynload/_bz2.cpython-38-x86_64-linux-gnu.so
+7fafa709d000-7fafa709e000 rw-p 00005000 00:ce 2740                       /usr/lib/python3.8/lib-dynload/_bz2.cpython-38-x86_64-linux-gnu.so
+7fafa709e000-7fafa709f000 r--s 00003000 00:ce 4338                       /usr/local/lib/python3.8/dist-packages/konlpy/java/shineware-ds-1.0.jar
+7fafa709f000-7fafa70a7000 rw-s 00000000 00:ce 4345                       /tmp/hsperfdata_root/5435
+7fafa70a7000-7fafa71a7000 rw-p 00000000 00:00 0 
+7fafa71a7000-7fafa71b8000 r-xp 00000000 00:ce 2727                       /usr/lib/python3.8/lib-dynload/_json.cpython-38-x86_64-linux-gnu.so
+7fafa71b8000-7fafa73b7000 ---p 00011000 00:ce 2727                       /usr/lib/python3.8/lib-dynload/_json.cpython-38-x86_64-linux-gnu.so
+7fafa73b7000-7fafa73b8000 r--p 00010000 00:ce 2727                       /usr/lib/python3.8/lib-dynload/_json.cpython-38-x86_64-linux-gnu.so
+7fafa73b8000-7fafa73b9000 rw-p 00011000 00:ce 2727                       /usr/lib/python3.8/lib-dynload/_json.cpython-38-x86_64-linux-gnu.so
+7fafa73b9000-7fafa7654000 r-xp 00000000 00:ce 338                        /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+7fafa7654000-7fafa7853000 ---p 0029b000 00:ce 338                        /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+7fafa7853000-7fafa787f000 r--p 0029a000 00:ce 338                        /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+7fafa787f000-7fafa7881000 rw-p 002c6000 00:ce 338                        /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+7fafa7881000-7fafa7884000 rw-p 00000000 00:00 0 
+7fafa7884000-7fafa788a000 r--s 000d3000 00:ce 4208                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar
+7fafa788a000-7fafa788e000 r--p 00000000 00:ce 3272                       /usr/local/lib/python3.8/dist-packages/numpy/random/_mt19937.cpython-38-x86_64-linux-gnu.so
+7fafa788e000-7fafa789d000 r-xp 00004000 00:ce 3272                       /usr/local/lib/python3.8/dist-packages/numpy/random/_mt19937.cpython-38-x86_64-linux-gnu.so
+7fafa789d000-7fafa78a2000 r--p 00013000 00:ce 3272                       /usr/local/lib/python3.8/dist-packages/numpy/random/_mt19937.cpython-38-x86_64-linux-gnu.so
+7fafa78a2000-7fafa78a3000 r--p 00017000 00:ce 3272                       /usr/local/lib/python3.8/dist-packages/numpy/random/_mt19937.cpython-38-x86_64-linux-gnu.so
+7fafa78a3000-7fafa78a5000 rw-p 00018000 00:ce 3272                       /usr/local/lib/python3.8/dist-packages/numpy/random/_mt19937.cpython-38-x86_64-linux-gnu.so
+7fafa78a5000-7fafa78ad000 r-xp 00000000 00:ce 2713                       /usr/lib/python3.8/lib-dynload/_hashlib.cpython-38-x86_64-linux-gnu.so
+7fafa78ad000-7fafa7aac000 ---p 00008000 00:ce 2713                       /usr/lib/python3.8/lib-dynload/_hashlib.cpython-38-x86_64-linux-gnu.so
+7fafa7aac000-7fafa7aad000 r--p 00007000 00:ce 2713                       /usr/lib/python3.8/lib-dynload/_hashlib.cpython-38-x86_64-linux-gnu.so
+7fafa7aad000-7fafa7aae000 rw-p 00008000 00:ce 2713                       /usr/lib/python3.8/lib-dynload/_hashlib.cpython-38-x86_64-linux-gnu.so
+7fafa7aae000-7fafa7cae000 rw-p 00000000 00:00 0 
+7fafa7cae000-7fafa7cca000 r-xp 00000000 00:ce 54                         /lib/x86_64-linux-gnu/libz.so.1.2.11
+7fafa7cca000-7fafa7ec9000 ---p 0001c000 00:ce 54                         /lib/x86_64-linux-gnu/libz.so.1.2.11
+7fafa7ec9000-7fafa7eca000 r--p 0001b000 00:ce 54                         /lib/x86_64-linux-gnu/libz.so.1.2.11
+7fafa7eca000-7fafa7ecb000 rw-p 0001c000 00:ce 54                         /lib/x86_64-linux-gnu/libz.so.1.2.11
+7fafa7ecb000-7fafa7efa000 r-xp 00000000 00:ce 2167                       /lib/x86_64-linux-gnu/libexpat.so.1.6.7
+7fafa7efa000-7fafa80fa000 ---p 0002f000 00:ce 2167                       /lib/x86_64-linux-gnu/libexpat.so.1.6.7
+7fafa80fa000-7fafa80fc000 r--p 0002f000 00:ce 2167                       /lib/x86_64-linux-gnu/libexpat.so.1.6.7
+7fafa80fc000-7fafa80fd000 rw-p 00031000 00:ce 2167                       /lib/x86_64-linux-gnu/libexpat.so.1.6.7
+7fafa80fd000-7fafa829a000 r-xp 00000000 00:ce 147                        /lib/x86_64-linux-gnu/libm-2.27.so
+7fafa829a000-7fafa8499000 ---p 0019d000 00:ce 147                        /lib/x86_64-linux-gnu/libm-2.27.so
+7fafa8499000-7fafa849a000 r--p 0019c000 00:ce 147                        /lib/x86_64-linux-gnu/libm-2.27.so
+7fafa849a000-7fafa849b000 rw-p 0019d000 00:ce 147                        /lib/x86_64-linux-gnu/libm-2.27.so
+7fafa849b000-7fafa849d000 r-xp 00000000 00:ce 52                         /lib/x86_64-linux-gnu/libutil-2.27.so
+7fafa849d000-7fafa869c000 ---p 00002000 00:ce 52                         /lib/x86_64-linux-gnu/libutil-2.27.so
+7fafa869c000-7fafa869d000 r--p 00001000 00:ce 52                         /lib/x86_64-linux-gnu/libutil-2.27.so
+7fafa869d000-7fafa869e000 rw-p 00002000 00:ce 52                         /lib/x86_64-linux-gnu/libutil-2.27.so
+7fafa869e000-7fafa86a1000 r-xp 00000000 00:ce 70                         /lib/x86_64-linux-gnu/libdl-2.27.so
+7fafa86a1000-7fafa88a0000 ---p 00003000 00:ce 70                         /lib/x86_64-linux-gnu/libdl-2.27.so
+7fafa88a0000-7fafa88a1000 r--p 00002000 00:ce 70                         /lib/x86_64-linux-gnu/libdl-2.27.so
+7fafa88a1000-7fafa88a2000 rw-p 00003000 00:ce 70                         /lib/x86_64-linux-gnu/libdl-2.27.so
+7fafa88a2000-7fafa88bc000 r-xp 00000000 00:ce 82                         /lib/x86_64-linux-gnu/libpthread-2.27.so
+7fafa88bc000-7fafa8abb000 ---p 0001a000 00:ce 82                         /lib/x86_64-linux-gnu/libpthread-2.27.so
+7fafa8abb000-7fafa8abc000 r--p 00019000 00:ce 82                         /lib/x86_64-linux-gnu/libpthread-2.27.so
+7fafa8abc000-7fafa8abd000 rw-p 0001a000 00:ce 82                         /lib/x86_64-linux-gnu/libpthread-2.27.so
+7fafa8abd000-7fafa8ac1000 rw-p 00000000 00:00 0 
+7fafa8ac1000-7fafa8ca8000 r-xp 00000000 00:ce 64                         /lib/x86_64-linux-gnu/libc-2.27.so
+7fafa8ca8000-7fafa8ea8000 ---p 001e7000 00:ce 64                         /lib/x86_64-linux-gnu/libc-2.27.so
+7fafa8ea8000-7fafa8eac000 r--p 001e7000 00:ce 64                         /lib/x86_64-linux-gnu/libc-2.27.so
+7fafa8eac000-7fafa8eae000 rw-p 001eb000 00:ce 64                         /lib/x86_64-linux-gnu/libc-2.27.so
+7fafa8eae000-7fafa8eb2000 rw-p 00000000 00:00 0 
+7fafa8eb2000-7fafa8ed9000 r-xp 00000000 00:ce 37                         /lib/x86_64-linux-gnu/ld-2.27.so
+7fafa8ed9000-7fafa8eda000 r--s 0000a000 00:ce 4228                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jaccess.jar
+7fafa8eda000-7fafa8edc000 r--s 00001000 00:ce 4225                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar
+7fafa8edc000-7fafa8edd000 r--s 0000d000 00:ce 4224                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar
+7fafa8edd000-7fafa8ee0000 r--p 00000000 00:ce 3263                       /usr/local/lib/python3.8/dist-packages/numpy/random/_sfc64.cpython-38-x86_64-linux-gnu.so
+7fafa8ee0000-7fafa8ee8000 r-xp 00003000 00:ce 3263                       /usr/local/lib/python3.8/dist-packages/numpy/random/_sfc64.cpython-38-x86_64-linux-gnu.so
+7fafa8ee8000-7fafa8eea000 r--p 0000b000 00:ce 3263                       /usr/local/lib/python3.8/dist-packages/numpy/random/_sfc64.cpython-38-x86_64-linux-gnu.so
+7fafa8eea000-7fafa8eeb000 ---p 0000d000 00:ce 3263                       /usr/local/lib/python3.8/dist-packages/numpy/random/_sfc64.cpython-38-x86_64-linux-gnu.so
+7fafa8eeb000-7fafa8eec000 r--p 0000d000 00:ce 3263                       /usr/local/lib/python3.8/dist-packages/numpy/random/_sfc64.cpython-38-x86_64-linux-gnu.so
+7fafa8eec000-7fafa8eed000 rw-p 0000e000 00:ce 3263                       /usr/local/lib/python3.8/dist-packages/numpy/random/_sfc64.cpython-38-x86_64-linux-gnu.so
+7fafa8eed000-7fafa8ef4000 r--p 00000000 00:ce 3019                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_tests.cpython-38-x86_64-linux-gnu.so
+7fafa8ef4000-7fafa8f0b000 r-xp 00007000 00:ce 3019                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_tests.cpython-38-x86_64-linux-gnu.so
+7fafa8f0b000-7fafa8f11000 r--p 0001e000 00:ce 3019                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_tests.cpython-38-x86_64-linux-gnu.so
+7fafa8f11000-7fafa8f12000 r--p 00023000 00:ce 3019                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_tests.cpython-38-x86_64-linux-gnu.so
+7fafa8f12000-7fafa8f14000 rw-p 00024000 00:ce 3019                       /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_tests.cpython-38-x86_64-linux-gnu.so
+7fafa8f14000-7fafa8f54000 rw-p 00000000 00:00 0 
+7fafa8f54000-7fafa90b1000 r--p 00000000 00:ce 2162                       /usr/lib/locale/locale-archive
+7fafa90b1000-7fafa90b9000 rw-p 00000000 00:00 0 
+7fafa90b9000-7fafa90ba000 ---p 00000000 00:00 0 
+7fafa90ba000-7fafa90bb000 r--p 00000000 00:ce 3214                       /usr/local/lib/python3.8/dist-packages/numpy/fft/_pocketfft_internal.cpython-38-x86_64-linux-gnu.so
+7fafa90bb000-7fafa90ce000 r-xp 00001000 00:ce 3214                       /usr/local/lib/python3.8/dist-packages/numpy/fft/_pocketfft_internal.cpython-38-x86_64-linux-gnu.so
+7fafa90ce000-7fafa90d0000 r--p 00014000 00:ce 3214                       /usr/local/lib/python3.8/dist-packages/numpy/fft/_pocketfft_internal.cpython-38-x86_64-linux-gnu.so
+7fafa90d0000-7fafa90d1000 r--p 00015000 00:ce 3214                       /usr/local/lib/python3.8/dist-packages/numpy/fft/_pocketfft_internal.cpython-38-x86_64-linux-gnu.so
+7fafa90d1000-7fafa90d2000 rw-p 00016000 00:ce 3214                       /usr/local/lib/python3.8/dist-packages/numpy/fft/_pocketfft_internal.cpython-38-x86_64-linux-gnu.so
+7fafa90d2000-7fafa90d9000 r--s 00000000 00:ce 213                        /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7fafa90d9000-7fafa90da000 r--p 00027000 00:ce 37                         /lib/x86_64-linux-gnu/ld-2.27.so
+7fafa90da000-7fafa90db000 rw-p 00028000 00:ce 37                         /lib/x86_64-linux-gnu/ld-2.27.so
+7fafa90db000-7fafa90dc000 rw-p 00000000 00:00 0 
+7ffef6da4000-7ffef6da7000 ---p 00000000 00:00 0 
+7ffef6da7000-7ffef6ea4000 rw-p 00000000 00:00 0                          [stack]
+7ffef6f27000-7ffef6f29000 r--p 00000000 00:00 0                          [vvar]
+7ffef6f29000-7ffef6f2b000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF8 -ea -Xmx1024m 
+java_command: <unknown>
+java_class_path (initial): /usr/local/lib/python3.8/dist-packages/konlpy/java:/usr/local/lib/python3.8/dist-packages/konlpy/java/bin:/usr/local/lib/python3.8/dist-packages/konlpy/java/snakeyaml-1.12.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/scala-library-2.12.3.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/komoran-3.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/shineware-common-1.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/shineware-ds-1.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/kkma-2.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/aho-corasick.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/jhannanum-0.8.4.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/open-korean-text-2.1.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/twitter-text-1.14.7.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/jhannanum-0.8.4.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/kkma-2.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/aho-corasick.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/shineware-common-1.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/shineware-ds-1.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/komoran-3.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/snakeyaml-1.12.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/scala-library-2.12.3.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/open-korean-text-2.1.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/twitter-text-1.14.7.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/snakeyaml-1.12.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/scala-library-2.12.3.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/komoran-3.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/shineware-common-1.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/shineware-ds-1.0.jar:/usr/local/lib/python3.8/dist-packages/konlpy/java/kkma-2.0.jar:/usr/l
+Launcher Type: generic
+
+Environment Variables:
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+SHELL=/bin/bash
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xb6c680], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xb6c680], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x98c980], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x98c980], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x98c980], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x98c980], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x98c830], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0x98cea0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [libjvm.so+0x98cea0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGTERM: [libjvm.so+0x98cea0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.so+0x98cea0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=18.04
+DISTRIB_CODENAME=bionic
+DISTRIB_DESCRIPTION="Ubuntu 18.04.2 LTS"
+
+uname:Linux 4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021 x86_64
+libc:glibc 2.27 NPTL 2.27 
+rlimit: STACK 8192k, CORE infinity, NPROC infinity, NOFILE 1048576, AS infinity
+load average:3.40 3.04 2.90
+
+/proc/meminfo:
+MemTotal:       16045672 kB
+MemFree:         4975976 kB
+MemAvailable:   10635680 kB
+Buffers:          906616 kB
+Cached:          4011988 kB
+SwapCached:        19028 kB
+Active:          6298208 kB
+Inactive:        2471824 kB
+Active(anon):    3599604 kB
+Inactive(anon):   459968 kB
+Active(file):    2698604 kB
+Inactive(file):  2011856 kB
+Unevictable:       35936 kB
+Mlocked:           35936 kB
+SwapTotal:       8388604 kB
+SwapFree:        8291300 kB
+Dirty:              4176 kB
+Writeback:             0 kB
+AnonPages:       3869228 kB
+Mapped:           429376 kB
+Shmem:            201740 kB
+Slab:            1898060 kB
+SReclaimable:    1286052 kB
+SUnreclaim:       612008 kB
+KernelStack:       37728 kB
+PageTables:       152904 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    16411440 kB
+Committed_AS:   96003488 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:     1746856 kB
+DirectMap2M:    14637056 kB
+DirectMap1G:           0 kB
+
+container (cgroup) information:
+container_type: cgroupv1
+cpu_cpuset_cpus: 0-3
+cpu_memory_nodes: 0
+active_processor_count: 1
+cpu_quota: 30000
+cpu_period: 100000
+cpu_shares: -1
+memory_limit_in_bytes: 1073741824
+memory_and_swap_limit_in_bytes: 1610612736
+memory_soft_limit_in_bytes: -1
+memory_usage_in_bytes: 612945920
+memory_max_usage_in_bytes: 979337216
+
+
+CPU:total 4 (initial active 1) (4 cores per cpu, 1 threads per core) family 23 model 1 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD EPYC 7571
+stepping	: 2
+microcode	: 0x800126e
+cpu MHz		: 2199.988
+cache size	: 512 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero arat npt nrip_save
+bugs		: fxsave_leak sysret_ss_attrs spectre_v1 spectre_v2 spec_store_bypass
+bogomips	: 4399.97
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD EPYC 7571
+stepping	: 2
+microcode	: 0x800126e
+cpu MHz		: 2199.988
+cache size	: 512 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero arat npt nrip_save
+bugs		: fxsave_leak sysret_ss_attrs spectre_v1 spectre_v2 spec_store_bypass
+bogomips	: 4399.97
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD EPYC 7571
+stepping	: 2
+microcode	: 0x800126e
+cpu MHz		: 2199.988
+cache size	: 512 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero arat npt nrip_save
+bugs		: fxsave_leak sysret_ss_attrs spectre_v1 spectre_v2 spec_store_bypass
+bogomips	: 4399.97
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD EPYC 7571
+stepping	: 2
+microcode	: 0x800126e
+cpu MHz		: 2199.988
+cache size	: 512 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 2
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero arat npt nrip_save
+bugs		: fxsave_leak sysret_ss_attrs spectre_v1 spectre_v2 spec_store_bypass
+bogomips	: 4399.97
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 1048576k(450036k free), swap 8388604k(8291300k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.272-b10) for linux-amd64 JRE (1.8.0_272-8u272-b10-0ubuntu1~18.04-b10), built on Oct 26 2020 02:23:20 by "buildd" with gcc 7.5.0
+
+time: Tue Jan 17 02:11:41 2023
+timezone: UTC
+elapsed time: 1.388660 seconds (0d 0h 0m 1s)
+
